@@ -1,5 +1,22 @@
+import express from 'express';
+// import process from 'process';
+
+// Import necessary modules
 import React from 'react';
 import '../styles/About.css'; // Adjust the path as necessary
+
+// Create an instance of express
+const app = express();
+
+// Define a port
+const PORT = process.env.PORT || 3000;
+
+// Define a route handler for the default home page
+app.get('/', (req: express.Request, res: express.Response) => {
+    res.send('Hello, world!');
+});
+
+import ReactDOM from 'react-dom';
 
 const About = () => {
     return (
@@ -8,12 +25,16 @@ const About = () => {
             <div className="about-content">
                 <div className="about-text">
                     <p>Hello! I'm Miguel Bonilla, a passionate software developer with experience in building web applications using modern technologies. I specialize in JavaScript, React, and Node.js, and I love creating intuitive and dynamic user experiences.</p>
-                    <p>With a strong background in computer science and a keen eye for design, I strive to deliver high-quality code and innovative solutions. I am always eager to learn new skills and take on challenging projects.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, reading tech blogs, or enjoying outdoor activities.</p>
                 </div>
             </div>
         </div>
     );
 };
 
-export default About;
+// Render the About component
+ReactDOM.render(<About />, document.getElementById('root'));
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
