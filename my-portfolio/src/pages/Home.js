@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Welcome to My Portfolio</h1>
+      <p>Explore my projects and learn more about me!</p>
     </div>
   );
 };
