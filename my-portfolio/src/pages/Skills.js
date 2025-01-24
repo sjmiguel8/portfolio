@@ -17,7 +17,7 @@ const Skills = () => {
         <div>
             <Header />
             <div className="skills-container">
-                <h2>My Skills</h2>
+                <h2>Familiar Languages</h2>
                 <div className="skills-list">
                     {skills.map((skill, index) => (
                         <div

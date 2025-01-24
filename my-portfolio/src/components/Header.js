@@ -16,7 +16,7 @@ const Header = () => {
     <header className="header">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
-          <Link className="navbar-brand" to="/">My Professional Portfolio</Link>
+          <Link className="navbar-brand" to="/">Miguel B. Portfolio</Link>
           <button 
             className={`navbar-toggler ${isOpen ? 'open' : ''}`}
             type="button"

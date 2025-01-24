@@ -15,20 +15,20 @@ const homeSkills = [
 const projects = [
   {
     title: 'FlutterTry',
-    description: 'AI with a task manager, document analysis, image emotion recognition, simple memory game, and more.',
-    fullDescription: 'Detailed description of FlutterTry project with all features and technologies used...',
+    description: 'AI with a task manager, document analysis, image emotion recognition, and more...',
+    fullDescription: 'FlutterTry is an innovative AI-powered application that integrates a variety of features to enhance productivity and user experience. It includes a task manager to help you organize and prioritize your tasks efficiently. The document analysis feature allows you to extract and analyze information from various documents quickly. Additionally, the image emotion recognition tool can detect and interpret emotions from images, providing valuable insights. The application also includes a simple memory game to help improve cognitive skills. Overall, FlutterTry is designed to be a versatile tool for both personal and professional use.',
     link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
   },
   {
     title: 'Book Chatter',
-    description: 'Different chatbots based off famous book characters...',
-    fullDescription: 'Detailed description of Book Chatter project...',
+    description: 'Chat with different chatbots based on famous book characters...',
+    fullDescription: 'Book Chatter is an engaging platform that allows users to interact with chatbots modeled after famous book characters. Whether you want to have a conversation with Sherlock Holmes, Elizabeth Bennet, or other beloved characters, Book Chatter provides a unique and entertaining experience. The platform also features a dream and psychoanalysis bot, offering users the opportunity to explore their subconscious thoughts and dreams. Book Chatter aims to bring literature to life by combining the charm of classic characters with modern AI technology.',
     link: 'http://bookchatter.s3-website.us-east-2.amazonaws.com/'
   },
   {
     title: 'Socrates S',
-    description: 'A sophisticated system for managing and tracking educational progress.',
-    fullDescription: 'Detailed description of Socrates S project...',
+    description: 'A sophisticated system for managing and tracking educational progress...',
+    fullDescription: 'Socrates S is a comprehensive educational management system designed to support educators and students in tracking and enhancing learning outcomes. The platform offers detailed progress reports, personalized learning plans, and a wide range of interactive educational resources. With advanced analytics, Socrates S provides insights into student performance, helping educators identify areas for improvement and tailor their teaching strategies accordingly. The user-friendly interface ensures that both teachers and students can navigate the system with ease, making it an invaluable tool for modern education.',
     link: 'http://socratess.s3-website.us-east-2.amazonaws.com/login/'
   }
 ];
@@ -52,7 +52,7 @@ const Home = () => {
           <section className="hero-section">
             <Row className="mb-5">
               <Col>
-                <h1 className="text-center welcome-title">Welcome to My Professional Portfolio</h1>
+                <h1 className="text-center welcome-title">Welcome to my Portfolio</h1>
                 <p className="text-center welcome-subtitle">Explore my projects and learn more about me!</p>
               </Col>
             </Row>
@@ -99,7 +99,7 @@ const Home = () => {
           <section className="skills-section">
             <Row className="mb-4">
               <Col>
-                <h2 className="section-title">My Skills</h2>
+                <h2 className="section-title">Familiar Languages</h2>
                 <div className="skills-container">
                   {homeSkills.map((skill, index) => (
                     <div key={index} className="home-skill-item">

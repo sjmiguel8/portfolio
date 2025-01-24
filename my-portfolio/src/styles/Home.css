@@ -581,3 +581,61 @@ li {
 .modal-footer {
   border-top: 1px solid #333;
 }
+
+/* Modal Styles */
+.project-modal {
+  display: flex !important;
+  align-items: center;
+  padding: 1rem;
+}
+
+.project-modal .modal-dialog {
+  max-width: 600px;
+  width: 100%;
+  margin: 1.75rem auto;
+}
+
+.project-modal .modal-content {
+  background-color: #1a1a1d;
+  color: #ffffff;
+  border: 1px solid rgba(184, 43, 197, 0.2);
+  border-radius: 8px;
+  max-height: 80vh;
+}
+
+.project-modal .modal-header {
+  background-color: #000000;
+  border-bottom: 1px solid rgba(184, 43, 197, 0.2);
+  padding: 1rem 1.5rem;
+}
+
+.project-modal .modal-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.project-modal .modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.project-modal .modal-footer {
+  background-color: #000000;
+  border-top: 1px solid rgba(184, 43, 197, 0.2);
+  padding: 1rem 1.5rem;
+}
+
+.project-modal .close {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .project-modal .modal-dialog {
+    margin: 1rem;
+  }
+  
+  .project-modal .modal-content {
+    max-height: 90vh;
+  }
+}
