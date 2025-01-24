@@ -76,23 +76,25 @@ body {
 }
 
 .projects-container {
-    padding: 20px;
-    background-color: #1a1a1d;
+    padding: 100px;
+    background-color: #000000;
     color: #ffffff;
 }
 
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;    
 }
 
 .project-item {
-    background-color: #333;
+    background-color: #292828;
     padding: 20px;
-    border-radius: 5px;
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
+    border-radius: 15px;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: content-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: #ffffff 0 0 15px;
 }
 
 .project-item h2 {
@@ -100,7 +102,7 @@ body {
 }
 
 .project-item a {
-    color: #1e90ff;
+    color: #ffffff;
     text-decoration: none;
 }
 

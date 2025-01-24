@@ -4,14 +4,19 @@ import '../styles/Projects.css';
 
 const projects = [
     {
-        title: 'Project One',
-        description: 'Description of project one.',
-        link: 'http://example.com/project-one'
+        title: 'FlutterTry',
+        description: 'AI with a task manager, document analysis, image emotion recognition, simple memory game, and more.',
+        link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
     },
     {
-        title: 'Project Two',
-        description: 'Description of project two.',
-        link: 'http://example.com/project-two'
+        title: 'Book Chatter & Dream Analysis',
+        description: 'Different  chatbots based off famous book characters, chat with some of your faorite characters, or you can try the dream and psychoanalysis bot.',
+        link: 'http://bookchatter.s3-website.us-east-2.amazonaws.com/'
+    },
+    {
+        title: 'Socrates S',
+        description: 'A sophisticated system for managing and tracking educational progress.',
+        link: 'http://socratess.s3-website.us-east-2.amazonaws.com/login/'
     },
     // Add more projects as needed
 ];
