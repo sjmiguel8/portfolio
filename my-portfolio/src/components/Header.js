@@ -29,7 +29,7 @@ const Header = () => {
                 <Link className={`nav-link ${location.pathname === '/skills' ? 'active' : ''}`} to="/skills">Skills</Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link contact-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">Contact</Link>
+                <Link className={`nav-link contact-link`} to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

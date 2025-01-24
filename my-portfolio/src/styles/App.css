@@ -9,7 +9,7 @@ body {
 
 .app-container {
     min-height: 100vh;
-    padding-top: 60px; /* Match header height */
+    padding-top: 120px; /* Significantly increased padding to prevent content from being cut off by header */
 }
 
 .container {

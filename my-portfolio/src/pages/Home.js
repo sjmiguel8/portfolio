@@ -15,73 +15,81 @@ const Home = () => {
       <Header />
       <main className="main-content">
         <Container className="home-container">
-          <Row className="mb-4">
-            <Col>
-              <h1 className="text-center welcome-title">Welcome to My Professional Portfolio</h1>
-              <p className="text-center welcome-subtitle">Explore my projects and learn more about me!</p>
-            </Col>
-          </Row>
-          <Row className="mb-4">
-            <Col>
-              <h2 id="projects" className="section-title">Featured Projects</h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={4} className="mb-4">
-              <Card className="project-card">
-                <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
-                <Card.Body>
-                  <Card.Title>Project One</Card.Title>
-                  <Card.Text>Description of project one.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="project-card">
-                <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
-                <Card.Body>
-                  <Card.Title>Project Two</Card.Title>
-                  <Card.Text>Description of project two.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="project-card">
-                <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
-                <Card.Body>
-                  <Card.Title>Project Three</Card.Title>
-                  <Card.Text>Description of project three.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          <Row className="mb-4">
-            <Col>
-              <h2 id="skills" className="section-title">My Skills</h2>
-              <ul className="skills-list">
-                <li className="list-inline-item badge bg-light text-dark m-1">JavaScript</li>
-                <li className="list-inline-item badge bg-light text-dark m-1">React</li>
-                <li className="list-inline-item badge bg-light text-dark m-1">Node.js</li>
-                <li className="list-inline-item badge bg-light text-dark m-1">CSS</li>
-                <li className="list-inline-item badge bg-light text-dark m-1">HTML</li>
-              </ul>
-            </Col>
-          </Row>
-          <Row className="mb-4">
-            <Col className="text-center">
-              <Button variant="light" className="text-dark open-modal-button" onClick={handleOpen}>
-                Open Modal
-              </Button>
-            </Col>
-          </Row>
+          <section className="hero-section">
+            <Row className="mb-5">
+              <Col>
+                <h1 className="text-center welcome-title">Welcome to My Professional Portfolio</h1>
+                <p className="text-center welcome-subtitle">Explore my projects and learn more about me!</p>
+              </Col>
+            </Row>
+          </section>
+
+          <section className="projects-section">
+            <Row className="mb-4">
+              <Col>
+                <h2 className="section-title">Featured Projects</h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={4} className="mb-4">
+                <Card className="project-card">
+                  <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
+                  <Card.Body>
+                    <Card.Title>Project One</Card.Title>
+                    <Card.Text>Description of project one.</Card.Text>
+                    <Button variant="outline-light" size="sm">Learn More</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4} className="mb-4">
+                <Card className="project-card">
+                  <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
+                  <Card.Body>
+                    <Card.Title>Project Two</Card.Title>
+                    <Card.Text>Description of project two.</Card.Text>
+                    <Button variant="outline-light" size="sm">Learn More</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4} className="mb-4">
+                <Card className="project-card">
+                  <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
+                  <Card.Body>
+                    <Card.Title>Project Three</Card.Title>
+                    <Card.Text>Description of project three.</Card.Text>
+                    <Button variant="outline-light" size="sm">Learn More</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </section>
+
+          <section className="skills-section">
+            <Row className="mb-4">
+              <Col>
+                <h2 className="section-title">My Skills</h2>
+                <div className="skills-container">
+                  <ul className="skills-list">
+                    <li className="skill-item">JavaScript</li>
+                    <li className="skill-item">React</li>
+                    <li className="skill-item">Node.js</li>
+                    <li className="skill-item">CSS</li>
+                    <li className="skill-item">HTML</li>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+          </section>
         </Container>
       </main>
 
-      <Modal show={open} onHide={handleClose}>
+      <Modal show={open} onHide={handleClose} className="custom-modal">
         <Modal.Header closeButton>
-          <Modal.Title>Modal Title</Modal.Title>
+          <Modal.Title>Welcome to my Portfolio</Modal.Title>
         </Modal.Header>
-        <Modal.Body>This is some content for the modal. You can add more details here.</Modal.Body>
+        <Modal.Body>
+          Thank you for visiting my portfolio. Feel free to explore my projects and get in touch!
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
