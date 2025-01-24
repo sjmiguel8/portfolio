@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -6,19 +6,22 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import Modal from '@mui/material/Modal';
 import '../styles/Home.css';
 
 const Home = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div>
       <AppBar position="static" className="appBar">
         <Toolbar>
-          <Typography variant="h6" component="div" className="title" style={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" className="title" sx={{ flexGrow: 1 }}>
             My Professional Portfolio
           </Typography>
-          <Button variant="contained" className="button">
-            Click Me
-          </Button>
         </Toolbar>
       </AppBar>
       <Card className="root">
@@ -48,7 +51,7 @@ const Home = () => {
             Featured Projects
           </Typography>
           <ul>
-            <li className="projectItem">
+            <li className="projectItem" onClick={() => alert('Project One')}>
               <Typography variant="h5" component="h3">
                 Project One
               </Typography>
@@ -56,7 +59,7 @@ const Home = () => {
                 Description of project one.
               </Typography>
             </li>
-            <li className="projectItem">
+            <li className="projectItem" onClick={() => alert('Project Two')}>
               <Typography variant="h5" component="h3">
                 Project Two
               </Typography>
@@ -64,7 +67,7 @@ const Home = () => {
                 Description of project two.
               </Typography>
             </li>
-            <li className="projectItem">
+            <li className="projectItem" onClick={() => alert('Project Three')}>
               <Typography variant="h5" component="h3">
                 Project Three
               </Typography>
@@ -74,7 +77,35 @@ const Home = () => {
             </li>
           </ul>
         </div>
+        <div className="skills">
+          <Typography variant="h4" component="h2">
+            My Skills
+          </Typography>
+          <ul className="skills-list">
+            <li className="skill-item">JavaScript</li>
+            <li className="skill-item">React</li>
+            <li className="skill-item">Node.js</li>
+            <li className="skill-item">CSS</li>
+            <li className="skill-item">HTML</li>
+          </ul>
+        </div>
+        <Button variant="contained" className="button" onClick={handleOpen}>
+          Open Modal
+        </Button>
       </div>
+      <Modal open={open} onClose={handleClose}>
+        <div className="modal-content">
+          <Typography variant="h6" component="h2">
+            Modal Title
+          </Typography>
+          <Typography variant="body1" component="p">
+            This is some content for the modal. You can add more details here.
+          </Typography>
+          <Button variant="contained" className="button" onClick={handleClose}>
+            Close
+          </Button>
+        </div>
+      </Modal>
     </div>
   );
 };

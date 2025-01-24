@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -17,6 +21,15 @@ body {
 }
 
 .scroll-animation {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.scroll-animation-visible {
+  opacity: 1;
+}
+
+.scroll-animation {
   transform: translateZ(0);
   transition: transform 0.5s ease-out;
 }
@@ -28,53 +41,120 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .home {
   text-align: center;
   padding: 20px;
-  background-color: #000000;
-  color: #ffffff;
-  animation: fadeIn 1s ease-in-out;
+  background-color: #1a1a1d;
+  color: #c5c6c7;
 }
 
-.projects {
+.welcome {
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.projects, .skills {
   margin-top: 40px;
-  color: #ffffff;
 }
 
 .projectItem {
   margin-bottom: 20px;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.appBar {
-  background-color: #000000; /* Change AppBar background color */
-  
-}
-
-.title {
-  color: #ffffff; /* Change title color */
-}
-
-.button {
-  background-color: #ffffff; /* Change button background color */
-  color: #333; /* Change button text color */
-}
-
-.button:hover {
-  background-color: #b72194; /* Change button hover color */
-  transition: background-color 0.3s ease;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projectItem:hover {
   transform: translateY(-5px);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.appBar {
+  background-color: #433333; /* Change AppBar background color */
+}
+
+.title {
+  color: #ffcc00; /* Change title color */
+}
+
+.button {
+  background-color: #ffcc00; /* Change button background color */
+  color: #333; /* Change button text color */
+  margin-top: 40px;
+}
+
+.button:hover {
+  background-color: #ff9900; /* Change button hover color */
 }
 
 @media (max-width: 768px) {
@@ -111,4 +191,47 @@ li {
 .media {
   height: 140px;
   
+}
+
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+.card {
+  perspective: 1000px;
+}
+
+.card-content {
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #ff7e5f, #feb47b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.modal-content {
+  background-color: #1a1a1d;
+  color: #c5c6c7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
 }
