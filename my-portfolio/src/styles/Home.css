@@ -1,23 +1,33 @@
 .home {
   text-align: center;
   padding: 20px;
-  
+  background-color: #1a1a1d;
+  color: #c5c6c7;
 }
 
 .projects {
   margin-top: 40px;
+  color: #66fcf1;
 }
 
 .projectItem {
   margin-bottom: 20px;
+  background-color: #0b0c10;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  color: #c5c6c7;
 }
 
 li {
   margin-bottom: 20px;
+  background-color: #4e4e50;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
-
