@@ -1,75 +1,28 @@
 {
   "name": "my-portfolio",
-  "displayName": "notebook-renderer-react-sample",
-  "description": "Example of a Notebook renderer (visualizer) for GitHub Issues Notebook built with React.",
   "version": "1.0.0",
   "private": true,
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.58.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "contributes": {
-    "notebookRenderer": [
-      {
-        "id": "notebook-renderer-react-github-issues",
-        "entrypoint": "./out/client/index.js",
-        "displayName": "GitHub Issues React-based Renderer",
-        "mimeTypes": [
-          "x-application/github-issues"
-        ]
-      }
-    ]
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
-    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
-    "@babel/plugin-transform-runtime": "^7.25.9",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "@types/express": "^5.0.0",
-    "@types/glob": "^7.1.3",
-    "@types/node": "^20",
-    "@types/react": "^17.0.15",
-    "@types/react-dom": "^17.0.9",
-    "@types/vscode": "^1.58.0",
-    "@types/vscode-notebook-renderer": "^1.72.3",
-    "@types/webpack-env": "^1.18.5",
-    "concurrently": "^5.3.0",
-    "css-loader": "^7.1.2",
-    "glob": "^7.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.1",
-    "style-loader": "^1.2.1",
-    "ts-loader": "^9.4.2",
-    "typescript": "^4.9.5",
-    "typescript-eslint": "^8.16.0",
-    "vscode-notebook-error-overlay": "^1.0.1"
-  },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.4.1",
-    "@mui/styles": "^6.4.1",
-    "bfj": "^9.1.2",
-    "bootstrap": "^5.3.3",
-    "dom": "^0.0.3",
-    "fs-extra": "^11.3.0",
-    "particles.js": "^2.0.0",
-    "react-bootstrap": "^2.10.8",
-    "react-router-dom": "^7.1.3",
-    "reactor": "^16.0.1"
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.5",
+    "@mui/styles": "^5.15.5",
+    "bootstrap": "^5.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-bootstrap": "^2.9.2",
+    "react-router-dom": "^6.21.3",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "browserslist": {
     "production": [
