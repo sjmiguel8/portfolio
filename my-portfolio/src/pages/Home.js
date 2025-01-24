@@ -12,11 +12,37 @@ const homeSkills = [
     { name: 'HTML', level: 'Advanced', progress: 90 }
 ];
 
-const Home = () => {
-  const [open, setOpen] = useState(false);
+const projects = [
+  {
+    title: 'FlutterTry',
+    description: 'AI with a task manager, document analysis, image emotion recognition, simple memory game, and more.',
+    fullDescription: 'Detailed description of FlutterTry project with all features and technologies used...',
+    link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
+  },
+  {
+    title: 'Book Chatter',
+    description: 'Different chatbots based off famous book characters...',
+    fullDescription: 'Detailed description of Book Chatter project...',
+    link: 'http://bookchatter.s3-website.us-east-2.amazonaws.com/'
+  },
+  {
+    title: 'Socrates S',
+    description: 'A sophisticated system for managing and tracking educational progress.',
+    fullDescription: 'Detailed description of Socrates S project...',
+    link: 'http://socratess.s3-website.us-east-2.amazonaws.com/login/'
+  }
+];
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+const Home = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowDetails = (project) => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
+
+  const handleClose = () => setShowModal(false);
 
   return (
     <div className="page-wrapper">
@@ -39,36 +65,34 @@ const Home = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={4} className="mb-4">
-                <Card className="project-card">
-                  <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
-                  <Card.Body>
-                    <Card.Title>Project One</Card.Title>
-                    <Card.Text>Description of project one.</Card.Text>
-                    <Button variant="outline-light" size="sm">Learn More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} className="mb-4">
-                <Card className="project-card">
-                  <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
-                  <Card.Body>
-                    <Card.Title>Project Two</Card.Title>
-                    <Card.Text>Description of project two.</Card.Text>
-                    <Button variant="outline-light" size="sm">Learn More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} className="mb-4">
-                <Card className="project-card">
-                  <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
-                  <Card.Body>
-                    <Card.Title>Project Three</Card.Title>
-                    <Card.Text>Description of project three.</Card.Text>
-                    <Button variant="outline-light" size="sm">Learn More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
+              {projects.map((project, index) => (
+                <Col md={4} className="mb-4" key={index}>
+                  <Card className="project-card">
+                    <Card.Body>
+                      <Card.Title>{project.title}</Card.Title>
+                      <Card.Text>{project.description}</Card.Text>
+                      <div className="button-group">
+                        <Button 
+                          variant="outline-light" 
+                          size="sm" 
+                          onClick={() => handleShowDetails(project)}
+                        >
+                          Learn More
+                        </Button>
+                        <Button 
+                          variant="outline-light" 
+                          size="sm"
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Visit Project
+                        </Button>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
             </Row>
           </section>
 
@@ -97,6 +121,20 @@ const Home = () => {
           </section>
         </Container>
       </main>
+
+      <Modal show={showModal} onHide={handleClose} className="project-modal">
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedProject?.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {selectedProject?.fullDescription}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

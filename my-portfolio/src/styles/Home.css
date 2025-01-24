@@ -154,31 +154,73 @@ h1, h2 {
 /* Project Cards */
 .project-card {
   height: 100%;
+  display: contents;
+  flex-direction: column;
   background-color: #000000;
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .project-card .card-body {
   background-color: #000000;
   color: #ffffff;
-  width: max-content;
+  width: 100%;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card .card-title {
   color: #ffffff;
   font-size: 1.5em;
   margin-bottom: 10px;
+  
 }
 
 .project-card .card-text {
   color: #ffffff;
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-card .btn {
+  width: 100%;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+
+.project-card .btn:hover {
+  transform: translateY(-2px);
+  background-color: #b82bc5;
+  border-color: #b82bc5;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 4px 15px rgba(184, 43, 197, 0.3);
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    min-height: 350px;
+  }
 }
 
 /* Skills Section */
@@ -510,14 +552,7 @@ li {
 
 .modal-content {
   background-color: #1a1a1d;
-  color: #c5c6c7;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  max-width: 500px;
-  margin: 100px auto;
-  text-align: center;
-  animation: fadeIn 0.5s ease-in-out;
+  color: #ffffff;
 }
 
 .custom-modal .modal-content {
@@ -531,4 +566,18 @@ li {
 
 .custom-modal .modal-footer {
   border-top-color: #333;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #333;
+}
+
+.modal-footer {
+  border-top: 1px solid #333;
 }
