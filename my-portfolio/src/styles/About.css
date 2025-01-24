@@ -23,7 +23,8 @@ body {
 .header h1 {
     font-size: 3em;
     margin: 0;
-    color: #005f99;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header p {
@@ -48,13 +49,13 @@ body {
 .about-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #005f99;
+    color: #000000;
 }
 
 .about-section p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #777;
+    color: #020202;
 }
 
 .skills-section {
@@ -64,7 +65,7 @@ body {
 .skills-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #005f99;
+    color: #000000;
 }
 
 .skills-list {
@@ -75,7 +76,7 @@ body {
 .skills-list li {
     font-size: 1.1em;
     margin-bottom: 10px;
-    color: #777;
+    color: #010101;
 }
 
 .footer {
