@@ -20,6 +20,7 @@
 
 .navbar-nav {
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -28,11 +29,15 @@
 
 .nav-link {
   color: #ffffff !important;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #b82bc5 !important;
-  text-decoration: underline;
+  background-color: #b82bc5 !important;
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
 .navbar-toggler {

@@ -80,8 +80,26 @@ h1, h2 {
   color: #c5c6c7;
 }
 
+.home-container {
+  padding: 20px;
+  background-color: #1a1a1d;
+  color: #c5c6c7;
+}
+
 .welcome {
   margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s forwards;
+}
+
+.welcome-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.2s forwards;
 }
 
 .intro {
@@ -90,6 +108,12 @@ h1, h2 {
 
 .projects, .skills {
   margin-top: 40px;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.4s forwards;
 }
 
 .projectItem {
@@ -107,6 +131,19 @@ h1, h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+.project-card {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 .skills {
   margin-top: 40px;
   color: #ffffff;
@@ -115,6 +152,7 @@ h1, h2 {
 .skills-list {
   list-style: none;
   padding: 0;
+  animation: fadeInUp 1.6s forwards;
 }
 
 .skill-item {
@@ -147,6 +185,10 @@ h1, h2 {
 
 .button:hover {
   background-color: #c71ea0; /* Change button hover color */
+}
+
+.open-modal-button {
+  animation: fadeInUp 1.8s forwards;
 }
 
 @media (max-width: 768px) {

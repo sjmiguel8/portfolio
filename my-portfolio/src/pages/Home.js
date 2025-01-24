@@ -13,21 +13,21 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Container>
+      <Container className="home-container">
         <Row className="mb-4">
           <Col>
-            <h1 className="text-center text-white">Welcome to My Professional Portfolio</h1>
-            <p className="text-center text-white">Explore my projects and learn more about me!</p>
+            <h1 className="text-center text-white welcome-title">Welcome to My Professional Portfolio</h1>
+            <p className="text-center text-white welcome-subtitle">Explore my projects and learn more about me!</p>
           </Col>
         </Row>
         <Row className="mb-4">
           <Col>
-            <h2 id="projects" className="text-white">Featured Projects</h2>
+            <h2 id="projects" className="text-white section-title">Featured Projects</h2>
           </Col>
         </Row>
         <Row>
           <Col md={4} className="mb-4">
-            <Card onClick={() => alert('Project One')}>
+            <Card className="project-card" onClick={() => alert('Project One')}>
               <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
               <Card.Body>
                 <Card.Title>Project One</Card.Title>
@@ -36,7 +36,7 @@ const Home = () => {
             </Card>
           </Col>
           <Col md={4} className="mb-4">
-            <Card onClick={() => alert('Project Two')}>
+            <Card className="project-card" onClick={() => alert('Project Two')}>
               <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
               <Card.Body>
                 <Card.Title>Project Two</Card.Title>
@@ -45,7 +45,7 @@ const Home = () => {
             </Card>
           </Col>
           <Col md={4} className="mb-4">
-            <Card onClick={() => alert('Project Three')}>
+            <Card className="project-card" onClick={() => alert('Project Three')}>
               <Card.Img variant="top" src="/static/images/cards/contemplative-reptile.jpg" />
               <Card.Body>
                 <Card.Title>Project Three</Card.Title>
@@ -56,8 +56,8 @@ const Home = () => {
         </Row>
         <Row className="mb-4">
           <Col>
-            <h2 id="skills" className="text-white">My Skills</h2>
-            <ul className="list-inline">
+            <h2 id="skills" className="text-white section-title">My Skills</h2>
+            <ul className="list-inline skills-list">
               <li className="list-inline-item badge bg-light text-dark m-1">JavaScript</li>
               <li className="list-inline-item badge bg-light text-dark m-1">React</li>
               <li className="list-inline-item badge bg-light text-dark m-1">Node.js</li>
@@ -68,7 +68,7 @@ const Home = () => {
         </Row>
         <Row className="mb-4">
           <Col className="text-center">
-            <Button variant="light" className="text-dark" onClick={handleOpen}>
+            <Button variant="light" className="text-dark open-modal-button" onClick={handleOpen}>
               Open Modal
             </Button>
           </Col>
