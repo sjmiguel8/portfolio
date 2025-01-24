@@ -87,6 +87,8 @@ h1, h2 {
   background-color: #000000;
   color: #ffffff;
   padding-top: 80px; /* Increased padding to prevent content from being cut off */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .main-content {
@@ -95,10 +97,18 @@ h1, h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: transparent;
 }
 
 .home-container {
   padding: 20px;
+  background-color: transparent !important;
+}
+
+/* Fix container backgrounds */
+.container, 
+.container-fluid {
+  background-color: transparent !important;
 }
 
 .hero-section {
@@ -335,6 +345,18 @@ h1, h2 {
     width: 100px;
     height: 100px;
     font-size: 0.9em;
+  }
+
+  .page-wrapper {
+    padding-top: 60px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .home-container {
+    padding: 10px;
   }
 }
 

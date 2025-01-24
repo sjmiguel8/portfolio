@@ -194,6 +194,15 @@
   top: 50%;
 }
 
+.navbar-collapse {
+  transition: height 0.3s ease-in-out;
+}
+
+.navbar-collapse.show {
+  height: auto;
+  background: rgba(0, 0, 0, 0.95);
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;
@@ -202,6 +211,13 @@
     right: 0;
     background: rgba(0, 0, 0, 0.95);
     padding: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .navbar-collapse.show {
+    max-height: calc(100vh - 60px);
   }
 
   .nav-item {

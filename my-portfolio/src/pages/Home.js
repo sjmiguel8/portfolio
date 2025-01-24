@@ -97,20 +97,6 @@ const Home = () => {
           </section>
         </Container>
       </main>
-
-      <Modal show={open} onHide={handleClose} className="custom-modal">
-        <Modal.Header closeButton>
-          <Modal.Title>Welcome to my Portfolio</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          Thank you for visiting my portfolio. Feel free to explore my projects and get in touch!
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </div>
   );
 };
