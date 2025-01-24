@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #000000;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .project-card {
-    background: #f9f9f9;
+    background: #000000;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
@@ -64,7 +64,7 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #ffffff;
+    background-color: #000000;
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
