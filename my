@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
-import Header from '../components/Header';
+import { Navbar, Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Home.css';
 
@@ -12,17 +11,21 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
+      <Navbar bg="dark" variant="dark" className="mb-4">
+        <Container>
+          <Navbar.Brand href="#home">My Professional Portfolio</Navbar.Brand>
+        </Container>
+      </Navbar>
       <Container>
         <Row className="mb-4">
           <Col>
-            <h1 className="text-center text-white">Welcome to My Professional Portfolio</h1>
-            <p className="text-center text-white">Explore my projects and learn more about me!</p>
+            <h1 className="text-center">Welcome to My Professional Portfolio</h1>
+            <p className="text-center">Explore my projects and learn more about me!</p>
           </Col>
         </Row>
         <Row className="mb-4">
           <Col>
-            <h2 id="projects" className="text-white">Featured Projects</h2>
+            <h2>Featured Projects</h2>
           </Col>
         </Row>
         <Row>
@@ -56,19 +59,19 @@ const Home = () => {
         </Row>
         <Row className="mb-4">
           <Col>
-            <h2 id="skills" className="text-white">My Skills</h2>
+            <h2>My Skills</h2>
             <ul className="list-inline">
-              <li className="list-inline-item badge bg-light text-dark m-1">JavaScript</li>
-              <li className="list-inline-item badge bg-light text-dark m-1">React</li>
-              <li className="list-inline-item badge bg-light text-dark m-1">Node.js</li>
-              <li className="list-inline-item badge bg-light text-dark m-1">CSS</li>
-              <li className="list-inline-item badge bg-light text-dark m-1">HTML</li>
+              <li className="list-inline-item badge badge-primary m-1">JavaScript</li>
+              <li className="list-inline-item badge badge-secondary m-1">React</li>
+              <li className="list-inline-item badge badge-success m-1">Node.js</li>
+              <li className="list-inline-item badge badge-danger m-1">CSS</li>
+              <li className="list-inline-item badge badge-warning m-1">HTML</li>
             </ul>
           </Col>
         </Row>
         <Row className="mb-4">
           <Col className="text-center">
-            <Button variant="light" className="text-dark" onClick={handleOpen}>
+            <Button variant="primary" onClick={handleOpen}>
               Open Modal
             </Button>
           </Col>

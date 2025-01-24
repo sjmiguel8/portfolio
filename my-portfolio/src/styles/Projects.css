@@ -74,3 +74,36 @@ body {
 .project-card a:hover {
     background-color: #0b143d;
 }
+
+.projects-container {
+    padding: 20px;
+    background-color: #1a1a1d;
+    color: #ffffff;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.project-item h2 {
+    margin-top: 0;
+}
+
+.project-item a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}

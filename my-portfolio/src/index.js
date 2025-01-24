@@ -1,21 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css'; // Ensure this import is correct
-import Particles from 'particles.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-  Particles.init({
-    selector: '.background',
-    color: '#ffffff',
-    connectParticles: true,
-    maxParticles: 100,
-  });
-});
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

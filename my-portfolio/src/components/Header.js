@@ -1,25 +1,37 @@
 import React from 'react';
-import './Header.css'; // Ensure this file exists in the same directory
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/Header.css';
 
 const Header = () => {
   return (
-    <header className="header">
-      <h1 className="logo">My Portfolio</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/projects">Projects</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
+    <header>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container">
+          <Link className="navbar-brand" to="/">My Professional Portfolio</Link>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">About</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/projects">Projects</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/skills">Skills</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
   );

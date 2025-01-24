@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from '../components/Header';
+import '../styles/Projects.css';
 
 const projects = [
     {
@@ -17,15 +19,18 @@ const projects = [
 const Projects = () => {
     return (
         <div>
-            <h1>My Projects</h1>
-            <div>
-                {projects.map((project, index) => (
-                    <div key={index}>
-                        <h2>{project.title}</h2>
-                        <p>{project.description}</p>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                    </div>
-                ))}
+            <Header />
+            <div className="projects-container">
+                <h1>My Projects</h1>
+                <div className="projects-list">
+                    {projects.map((project, index) => (
+                        <div key={index} className="project-item">
+                            <h2>{project.title}</h2>
+                            <p>{project.description}</p>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
