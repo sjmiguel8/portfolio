@@ -51,13 +51,13 @@ body {
 .about-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .about-section p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #020202;
+    color: #ffffff;
 }
 
 .skills-section {
@@ -67,7 +67,7 @@ body {
 .skills-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .skills-list {
@@ -93,23 +93,37 @@ body {
 .footer p {
     margin: 0;
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
 }
 
 .about-container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: calc(100vh - 60px);
+    padding-top: 60px; /* Match header height */
 }
 
 .about-content {
     text-align: center;
     padding: 50px 0;
-    background-color: #1a1a1d;
-    color: #c5c6c7;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .about-text {
     font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* Update other text colors */
+.header h1,
+.header p,
+.about-section h2,
+.about-section p,
+.skills-section h2,
+.footer p {
     color: #ffffff;
 }

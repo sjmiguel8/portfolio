@@ -4,10 +4,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Polyfill for smooth scrolling in Safari on iOS < 15.4 */
+@supports not (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: auto; /* Ensure auto scroll behavior for unsupported browsers */
+  }
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   perspective: 1000px; /* Enable 3D space */
 }
@@ -73,33 +82,123 @@ h1, h2 {
   }
 }
 
-.home {
-  text-align: center;
+.page-wrapper {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 60px; /* Match header height */
+}
+
+.main-content {
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #1a1a1d;
-  color: #c5c6c7;
 }
 
 .home-container {
   padding: 20px;
-  background-color: #1a1a1d;
-  color: #c5c6c7;
-}
-
-.welcome {
-  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .welcome-title {
+  color: #ffffff;
   font-size: 2.5em;
   margin-bottom: 20px;
   animation: fadeInUp 1s forwards;
 }
 
 .welcome-subtitle {
+  color: #ffffff;
   font-size: 1.2em;
   margin-bottom: 40px;
   animation: fadeInUp 1.2s forwards;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.4s forwards;
+}
+
+/* Project Cards */
+.project-card {
+  height: 100%;
+  background-color: #333;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card .card-body {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.project-card .card-title {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-card .card-text {
+  color: #ffffff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Skills Section */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list-inline-item {
+  background-color: #333 !important;
+  color: #ffffff !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-inline-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 2em;
+  }
+
+  .welcome-subtitle {
+    font-size: 1em;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+}
+
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  padding-top: 100px; /* Add padding to account for fixed header */
 }
 
 .intro {
@@ -108,12 +207,6 @@ h1, h2 {
 
 .projects, .skills {
   margin-top: 40px;
-}
-
-.section-title {
-  font-size: 2em;
-  margin-bottom: 20px;
-  animation: fadeInUp 1.4s forwards;
 }
 
 .projectItem {
@@ -131,28 +224,9 @@ h1, h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.project-card {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
 .skills {
   margin-top: 40px;
   color: #ffffff;
-}
-
-.skills-list {
-  list-style: none;
-  padding: 0;
-  animation: fadeInUp 1.6s forwards;
 }
 
 .skill-item {
@@ -189,16 +263,16 @@ h1, h2 {
 
 .open-modal-button {
   animation: fadeInUp 1.8s forwards;
+  background-color: #ffffff; /* Change button background color to white */
+  color: #000000; /* Change button text color to black for contrast */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-@media (max-width: 768px) {
-  .home {
-    padding: 10px;
-  }
-
-  .projects {
-    margin-top: 20px;
-  }
+.open-modal-button:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
 }
 
 /* projects on home page */
@@ -274,8 +348,4 @@ li {
   margin: 100px auto;
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
-}
-
-.list-inline-item {
-  font-size: 1.2em;
 }

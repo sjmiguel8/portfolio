@@ -1,57 +1,21 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1d;
-    color: #c5c6c7;
+    background-color: #000000;
+    color: #ffffff;
     line-height: 1.6;
 }
 
-header {
-    background: #4e4e50;
-    color: #c5c6c7;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    color: #a52abe;
-    transition: color 0.3s ease;
+.app-container {
+    min-height: 100vh;
+    padding-top: 60px; /* Match header height */
 }
 
 .container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
-    background: #000000;
-    box-shadow: 0 4px 15px rgb(255, 255, 255);
-    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #1f2833;
-    color: #c5c6c7;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-}
+/* Remove other header styles if they exist */
