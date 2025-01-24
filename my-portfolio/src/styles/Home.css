@@ -154,14 +154,16 @@ h1, h2 {
 /* Project Cards */
 .project-card {
   height: 100%;
-  background-color: #1a1a1d;
+  background-color: #000000;
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .project-card .card-body {
-  background-color: #1a1a1d;
+  background-color: #000000;
   color: #ffffff;
+  width: max-content;
 }
 
 .project-card .card-title {
@@ -288,8 +290,8 @@ h1, h2 {
   border-radius: 10px;
   padding: 20px;
   margin: 15px 0;
-  width: 100%;
-  max-width: 500px;
+  width: 60%;
+  max-width: 200px;
   transition: transform 0.3s ease;
 }
 
