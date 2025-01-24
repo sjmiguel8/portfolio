@@ -9,10 +9,7 @@
     "vscode": "^1.58.0"
   },
   "scripts": {
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
