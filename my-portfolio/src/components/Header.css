@@ -2,34 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000000;
-  color: #fff;
+  background-color: #1f2833;
+  color: #c5c6c7;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
 .logo {
-  color: #ffcc00; /* Change the color of "My Portfolio" */
+  color: #ffffff; /* Change the color of "My Portfolio" */
   margin-bottom: 20px;
 }
 
+/* Nav bar home about project contact buttons */
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;  
+  text-align: center; 
+  margin-top: 10px;
+  background-color: #000000;
+
 }
 
 nav ul li {
   margin: 10px 0;
+  display: inline;
+  margin-right: 60px;
+  
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
-  color: #921970;
+  color: #b82bc5;
   transition: color 0.3s ease;
 }

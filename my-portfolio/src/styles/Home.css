@@ -1,33 +1,60 @@
 .home {
   text-align: center;
   padding: 20px;
-  background-color: #1a1a1d;
-  color: #c5c6c7;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .projects {
   margin-top: 40px;
-  color: #66fcf1;
+  color: #ffffff;
 }
 
 .projectItem {
   margin-bottom: 20px;
-  background-color: #0b0c10;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  color: #000000;
 }
 
+.appBar {
+  background-color: #000000; /* Change AppBar background color */
+}
+
+.title {
+  color: #ffffff; /* Change title color */
+}
+
+.button {
+  background-color: #ffffff; /* Change button background color */
+  color: #333; /* Change button text color */
+}
+
+.button:hover {
+  background-color: #b72194; /* Change button hover color */
+}
+
+/* projects on home page */
 ul {
   list-style-type: none;
   padding: 0;
-  color: #c5c6c7;
+  color: #ffffff;
 }
 
 li {
   margin-bottom: 20px;
-  background-color: #4e4e50;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 3px rgb(255, 255, 255);
+}
+
+.root {
+  max-width: 345px;
+  margin: 20px auto;
+  
+}
+
+.media {
+  height: 140px;
+  
 }

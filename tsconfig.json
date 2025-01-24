@@ -5,15 +5,26 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "strict": true,
-    "jsx": "react",
-    // noEmit prevents the default tsc from building this--we use webpack instead
+    "jsx": "react-jsx",
     "noEmit": true,
     "rootDir": ".",
     "types": [
       "webpack-env",
       "vscode-notebook-renderer"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
   "include": [
     "src/**/*"
