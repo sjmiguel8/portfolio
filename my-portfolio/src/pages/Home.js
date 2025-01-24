@@ -4,6 +4,14 @@ import Header from '../components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Home.css';
 
+const homeSkills = [
+    { name: 'JavaScript', level: 'Advanced', progress: 90 },
+    { name: 'React', level: 'Advanced', progress: 85 },
+    { name: 'Node.js', level: 'Intermediate', progress: 75 },
+    { name: 'CSS', level: 'Advanced', progress: 90 },
+    { name: 'HTML', level: 'Advanced', progress: 90 }
+];
+
 const Home = () => {
   const [open, setOpen] = useState(false);
 
@@ -69,13 +77,20 @@ const Home = () => {
               <Col>
                 <h2 className="section-title">My Skills</h2>
                 <div className="skills-container">
-                  <ul className="skills-list">
-                    <li className="skill-item">JavaScript</li>
-                    <li className="skill-item">React</li>
-                    <li className="skill-item">Node.js</li>
-                    <li className="skill-item">CSS</li>
-                    <li className="skill-item">HTML</li>
-                  </ul>
+                  {homeSkills.map((skill, index) => (
+                    <div key={index} className="home-skill-item">
+                      <div className="skill-header">
+                        <span className="skill-name">{skill.name}</span>
+                        <span className="skill-level">{skill.level}</span>
+                      </div>
+                      <div className="progress-container">
+                        <div 
+                          className="progress-bar" 
+                          style={{ width: `${skill.progress}%` }}
+                        />
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </Col>
             </Row>

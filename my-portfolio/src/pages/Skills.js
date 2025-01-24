@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Header from '../components/Header';
 import '../styles/Skills.css';
 
 const skills = [
-    { name: 'JavaScript', level: 'Advanced' },
-    { name: 'React', level: 'Advanced' },
-    { name: 'Node.js', level: 'Intermediate' },
-    { name: 'HTML & CSS', level: 'Advanced' },
-    { name: 'Python', level: 'Intermediate' },
-    { name: 'Git', level: 'Advanced' },
-    { name: 'SQL', level: 'Intermediate' },
+    { name: 'JavaScript' },
+    { name: 'React' },
+    { name: 'Node.js' },
+    { name: 'HTML & CSS' },
+    { name: 'Python' },
+    { name: 'Git' },
+    { name: 'SQL' },
 ];
 
 const Skills = () => {
@@ -17,15 +17,18 @@ const Skills = () => {
         <div>
             <Header />
             <div className="skills-container">
-                <h2>Skills</h2>
-                <ul>
+                <h2>My Skills</h2>
+                <div className="skills-list">
                     {skills.map((skill, index) => (
-                        <li key={index} className="skill-item">
-                            <span className="skill-name">{skill.name}</span>
-                            <span className="skill-level">{skill.level}</span>
-                        </li>
+                        <div
+                            key={index}
+                            className="skill-item"
+                            style={{ '--index': index }}
+                        >
+                            {skill.name}
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );
