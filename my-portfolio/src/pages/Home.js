@@ -36,6 +36,41 @@ const projects = [
 const Home = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Update active section based on scroll position
+  const handleScroll = (e) => {
+    const sections = ['hero', 'projects', 'skills'];
+    const scrollPosition = e.target.scrollTop;
+    const sectionElements = sections.map(id => ({
+      id,
+      element: document.getElementById(id),
+    }));
+
+    for (const {id, element} of sectionElements) {
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top >= -100 && rect.top <= 100) {
+          setActiveSection(id);
+          break;
+        }
+      }
+    }
+  };
+
+  // Scroll to section when dot is clicked
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(sectionId);
+    }
+  };
 
   const handleShowDetails = (project) => {
     setSelectedProject(project);
@@ -47,18 +82,34 @@ const Home = () => {
   return (
     <div className="page-wrapper">
       <Header />
-      <main className="main-content">
-        <Container className="home-container">
-          <section className="hero-section">
+      <main className="main-content" onScroll={handleScroll}>
+        <div className="section-nav">
+          <div 
+            className={`nav-dot ${activeSection === 'hero' ? 'active' : ''}`}
+            onClick={() => scrollToSection('hero')}
+          />
+          <div 
+            className={`nav-dot ${activeSection === 'projects' ? 'active' : ''}`}
+            onClick={() => scrollToSection('projects')}
+          />
+          <div 
+            className={`nav-dot ${activeSection === 'skills' ? 'active' : ''}`}
+            onClick={() => scrollToSection('skills')}
+          />
+        </div>
+        <section id="hero" className="fullscreen-section hero-section">
+          <Container>
             <Row className="mb-5">
               <Col>
                 <h1 className="text-center welcome-title">Welcome to my Portfolio</h1>
                 <p className="text-center welcome-subtitle">Explore my projects and learn more about me!</p>
               </Col>
             </Row>
-          </section>
+          </Container>
+        </section>
 
-          <section className="projects-section">
+        <section id="projects" className="fullscreen-section projects-section">
+          <Container>
             <Row className="mb-4">
               <Col>
                 <h2 className="section-title">Featured Projects</h2>
@@ -94,9 +145,11 @@ const Home = () => {
                 </Col>
               ))}
             </Row>
-          </section>
+          </Container>
+        </section>
 
-          <section className="skills-section">
+        <section id="skills" className="fullscreen-section skills-section">
+          <Container>
             <Row className="mb-4">
               <Col>
                 <h2 className="section-title">Familiar Languages</h2>
@@ -118,8 +171,8 @@ const Home = () => {
                 </div>
               </Col>
             </Row>
-          </section>
-        </Container>
+          </Container>
+        </section>
       </main>
 
       <Modal show={showModal} onHide={handleClose} className="project-modal">
