@@ -16,7 +16,7 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
   perspective: 1000px; /* Enable 3D space */
 }
@@ -92,7 +92,7 @@ h1, h2 {
 
 .main-content {
   width: 100%;
-  background-color: transparent;
+  background-color: #000000;
   height: 100vh;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
@@ -202,7 +202,7 @@ h1, h2 {
 
 .hero-section {
   background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(25,25,25,0.8) 100%);
-  margin-bottom: 20px;  /* Reduced bottom margin */
+  margin-bottom: 50px;  /* Reduced bottom margin */
 }
 
 .hero-section .container {
@@ -210,7 +210,7 @@ h1, h2 {
   margin: 0 auto;
   text-align: center;
   transform: translateY(0);  /* Remove vertical offset */
-  padding: 20px 0;          /* Add some padding instead */
+  padding: 200px 0;          /* Add some padding instead */
 }
 
 .projects-section {
@@ -220,6 +220,7 @@ h1, h2 {
 .projects-section .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 90px 0;
 }
 
 .projects-section .row {
@@ -238,6 +239,8 @@ h1, h2 {
 .skills-section .skills-container {
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(25,25,25,0.8) 100%);
 }
 
 .welcome-title {
@@ -289,19 +292,21 @@ h1, h2 {
 }
 
 .project-card .card-body {
-  background-color: #000000;
+  background-color: #131313;
   color: #ffffff;
   width: 100%;
   padding: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .project-card .card-title {
   color: #ffffff;
   font-size: 1.5em;
   margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   
 }
 
@@ -309,6 +314,7 @@ h1, h2 {
   color: #ffffff;
   flex: 1;
   margin-bottom: 15px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .button-group {
@@ -323,6 +329,8 @@ h1, h2 {
   transition: all 0.3s ease;
   padding: 8px 0;
   font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #131313;
 }
 
 .project-card .btn:hover {
@@ -352,6 +360,7 @@ h1, h2 {
 .skills-section {
   margin: 60px 0;
   padding: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .skills-container {
@@ -448,12 +457,12 @@ h1, h2 {
 
 .home-skill-item:hover {
   transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(184, 43, 197, 0.3);
+  box-shadow: 0 5px 15px rgba(184, 43, 197, 0.797);
 }
 
 /* Home page specific skills styling */
 .home-skill-item {
-  background: rgba(51, 51, 51, 0.8);
+  background: #131313;
   border-radius: 10px;
   padding: 20px;
   margin: 15px 0;
@@ -464,6 +473,7 @@ h1, h2 {
 
 .home-skill-item:hover {
   transform: translateX(10px);
+  color: #e33be0d8;
 }
 
 .skill-header {
@@ -471,10 +481,12 @@ h1, h2 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
 }
 
 .progress-container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   height: 8px;
   overflow: hidden;
