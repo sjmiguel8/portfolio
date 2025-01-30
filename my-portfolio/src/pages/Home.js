@@ -162,8 +162,8 @@ const Home = () => {
           <Container>
             <Row className="mb-5">
               <Col>
-                <h1 className="text-center welcome-title">Welcome to my Portfolio</h1>
-                <p className="text-center welcome-subtitle">Explore my projects and learn more about me!</p>
+                <h1 className="text-center hero-title">Miguel's Portfolio</h1>
+                <p className="text-center hero-subtitle">Projects, Skills, and Certifications</p>
               </Col>
             </Row>
           </Container>
