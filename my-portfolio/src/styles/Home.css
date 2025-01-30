@@ -181,8 +181,31 @@ h1, h2 {
 
 .projects-section {
   animation-delay: 0.4s;
-  padding-top: 20px;  /* Reduced from default */
-  margin-top: 0;      /* Remove any top margin */
+  padding-top: 0px;  /* Reduced from default */
+  margin-top: 0px;      /* Remove any top margin */
+  margin-bottom: 0px;   /* Remove any bottom margin */
+  background: linear-gradient(135deg, rgba(25,25,25,0.8) 0%, rgba(0,0,0,0.9) 100%);
+  position:relative;
+  display:list-item;
+}
+
+.projects-section .container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding: auto;
+  display:grid;
+  position:relative;
+
+}
+
+.projects-section .row {
+  display:grid;  
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 0px;
+  margin: 0;
+  padding: 0px 0;
+
 }
 
 .skills-section {
@@ -211,20 +234,6 @@ h1, h2 {
   text-align: center;
   transform: translateY(0);  /* Remove vertical offset */
   padding: 200px 0;          /* Add some padding instead */
-}
-
-.projects-section {
-  background: linear-gradient(135deg, rgba(25,25,25,0.8) 0%, rgba(0,0,0,0.9) 100%);
-}
-
-.projects-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 90px 0;
-}
-
-.projects-section .row {
-  justify-content: center;
 }
 
 .skills-section {
@@ -281,67 +290,78 @@ h1, h2 {
 
 /* Project Cards */
 .project-card {
-  height: 100%;
-  display: contents;
-  flex-direction: column;
-  background-color: #000000;
-  border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 253, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(255, 255, 255);
+  position: relative;
+  padding: 20px;
+  transition: all 0.3s ease;
+  display:grid;
+  flex-wrap: wrap;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0px;
+  box-sizing: content-box;
+  min-height: 400px;
 }
 
+/* Single responsive breakpoint for project cards */
+@media screen and (max-width: 768px) {
+  .project-card {
+    min-height: 300px;
+  }
+}
+
+/* container containing the body, but not the container containing the body */
+
 .project-card .card-body {
-  background-color: #131313;
-  color: #ffffff;
-  width: 100%;
+
+  background-color:#000000 !important;
+  box-sizing: content-box;
+  display:grid;
   padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(255, 255, 255);
+  position: relative;
+
 }
 
 .project-card .card-title {
+  font-size: 1.5rem;
   color: #ffffff;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 600;
+
 }
 
 .project-card .card-text {
   color: #ffffff;
-  flex: 1;
-  margin-bottom: 15px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
 }
 
 .button-group {
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: auto;
-}
-
-.project-card .btn {
   width: 100%;
-  transition: all 0.3s ease;
-  padding: 8px 0;
-  font-size: 0.9rem;
-  color: #ffffff;
-  background-color: #131313;
 }
 
-.project-card .btn:hover {
-  transform: translateY(-2px);
-  background-color: #b82bc5;
-  border-color: #b82bc5;
+.button-group .btn {
+  width: 100%;
+  padding: 8px 0;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 15px rgba(184, 43, 197, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(242, 242, 242, 0.903);
+
 }
 
 @media (min-width: 768px) {
@@ -352,7 +372,7 @@ h1, h2 {
 
 @media (max-width: 767px) {
   .project-card {
-    min-height: 350px;
+    min-height: 300px;
   }
 }
 
@@ -539,6 +559,10 @@ h1, h2 {
   .home-container {
     padding: 10px;
   }
+
+  .projects-section .row {
+    grid-template-columns: 1fr;  /* Single column on mobile */
+  }
 }
 
 .home {
@@ -721,7 +745,7 @@ li {
 
 /* Modal Styles */
 .project-modal {
-  display: flex !important;
+  display: flex;
   align-items: center;
   padding: 1rem;
 }

@@ -3,6 +3,8 @@ import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
 import Header from '../components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Home.css';
+import '../styles/Projects.css';
+import '../styles/Skills.css';
 
 const homeSkills = [
     { name: 'JavaScript', level: 'Advanced', progress: 90 },
@@ -30,7 +32,42 @@ const projects = [
     description: 'A sophisticated system for managing and tracking educational progress...',
     fullDescription: 'Socrates S is a comprehensive educational management system designed to support educators and students in tracking and enhancing learning outcomes. The platform offers detailed progress reports, personalized learning plans, and a wide range of interactive educational resources. With advanced analytics, Socrates S provides insights into student performance, helping educators identify areas for improvement and tailor their teaching strategies accordingly. The user-friendly interface ensures that both teachers and students can navigate the system with ease, making it an invaluable tool for modern education.',
     link: 'http://socratess.s3-website.us-east-2.amazonaws.com/login/'
-  }
+  },
+  {
+    title: 'Ginx',
+    description: 'A modern web portfolio showcasing my professional work and skills.',
+    link: 'https://main.d1wv2h88ci88t8.amplifyapp.com/'
+  },
+  {
+    title: 'e-plant-shopping',
+    description: 'An e-commerce platform for buying and selling plants online.',
+    link: 'https://main.d1eqxt1nr5en92.amplifyapp.com/'
+  },
+  {
+    title: 'slime',
+    description: 'An interactive web game featuring slime physics and animations.',
+    link: 'https://main.d2409w8ghk72v2.amplifyapp.com/'
+  },
+  {
+    title: 'ChooseWisely',
+    description: 'A decision-making application helping users make informed choices.',
+    link: 'https://main.d2n5cghagdyuz8.amplifyapp.com/'
+  },
+  {
+    title: 'fullstack',
+    description: 'A comprehensive full-stack web application demonstration.',
+    link: 'https://main.d292ubbvg4ueuu.amplifyapp.com/'
+  },
+  {
+    title: 'OrganizeBot',
+    description: 'An AI-powered organization and productivity tool.',
+    link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
+  },
+  {
+    title: 'CrimeMapper',
+    description: 'A visualization tool for mapping and analyzing crime data.',
+    link: 'http://crimemapper.s3-website.us-east-2.amazonaws.com/'
+  },
 ];
 
 const Home = () => {
@@ -43,32 +80,40 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleNavigation = (sectionId) => {
+    scrollToSection(sectionId);
+    setIsOpen(false); // Close menu after navigation
+  };
+
   // Update active section based on scroll position
   const handleScroll = (e) => {
+    const scrollTop = e.target.scrollTop;
     const sections = ['hero', 'projects', 'skills'];
-    const scrollPosition = e.target.scrollTop;
-    const sectionElements = sections.map(id => ({
-      id,
-      element: document.getElementById(id),
-    }));
-
-    for (const {id, element} of sectionElements) {
+    
+    sections.forEach(sectionId => {
+      const element = document.getElementById(sectionId);
       if (element) {
         const rect = element.getBoundingClientRect();
-        if (rect.top >= -100 && rect.top <= 100) {
-          setActiveSection(id);
-          break;
+        const elementTop = rect.top + scrollTop;
+        const elementBottom = elementTop + rect.height;
+        
+        if (scrollTop >= elementTop - window.innerHeight/2 && 
+            scrollTop < elementBottom - window.innerHeight/2) {
+          setActiveSection(sectionId);
         }
       }
-    }
+    });
   };
 
   // Scroll to section when dot is clicked
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
+      const offsetTop = element.offsetTop;
+      document.querySelector('.main-content').scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -81,20 +126,20 @@ const Home = () => {
 
   return (
     <div className="page-wrapper">
-      <Header />
+      <Header isOpen={isOpen} toggleMenu={toggleMenu} />
       <main className="main-content" onScroll={handleScroll}>
         <div className="section-nav">
           <div 
             className={`nav-dot ${activeSection === 'hero' ? 'active' : ''}`}
-            onClick={() => scrollToSection('hero')}
+            onClick={() => handleNavigation('hero')}
           />
           <div 
             className={`nav-dot ${activeSection === 'projects' ? 'active' : ''}`}
-            onClick={() => scrollToSection('projects')}
+            onClick={() => handleNavigation('projects')}
           />
           <div 
             className={`nav-dot ${activeSection === 'skills' ? 'active' : ''}`}
-            onClick={() => scrollToSection('skills')}
+            onClick={() => handleNavigation('skills')}
           />
         </div>
         <section id="hero" className="fullscreen-section hero-section">
