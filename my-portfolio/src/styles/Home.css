@@ -97,33 +97,37 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .skills-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
   flex-direction: column;
   gap: 15px;
 }
 
 .home-skill-item {
   background: #292828;
-  padding: 15px 25px;
-  border-radius: 8px;
+  padding: 5px 0px;
+  border-radius: 6px;
   color: #ffffff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 0.95em;
   line-height: 1.4;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.933);
+  box-shadow: 0 0 2px rgb(255, 255, 255);
 }
 
 .home-skill-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgb(255, 255, 255);
   background: #313131;
 }
 
