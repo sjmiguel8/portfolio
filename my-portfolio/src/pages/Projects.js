@@ -59,17 +59,15 @@ const Projects = () => {
     return (
         <div>
             <Header />
-            <div className="projects-container">
+            <div className="projects-list">
                 <h1>My Projects</h1>
-                <div className="projects-list">
-                    {projects.map((project, index) => (
-                        <div key={index} className="project-item">
-                            <h2>{project.title}</h2>
-                            <p>{project.description}</p>
-                            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                        </div>
-                    ))}
-                </div>
+                {projects.map((project, index) => (
+                    <div key={index} className="project-item">
+                        <h2>{project.title}</h2>
+                        <p>{project.description}</p>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                ))}
             </div>
         </div>
     );

@@ -162,32 +162,30 @@ const Home = () => {
             </Row>
             <Row>
               {projects.map((project, index) => (
-                <Col md={4} className="mb-4" key={index}>
-                  <Card className="project-card">
-                    <Card.Body>
-                      <Card.Title>{project.title}</Card.Title>
-                      <Card.Text>{project.description}</Card.Text>
-                      <div className="button-group">
-                        <Button 
-                          variant="outline-light" 
-                          size="sm" 
-                          onClick={() => handleShowDetails(project)}
-                        >
-                          Learn More
-                        </Button>
-                        <Button 
-                          variant="outline-light" 
-                          size="sm"
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Visit Project
-                        </Button>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </Col>
+                <Card className="project-card" key={index}>
+                  <Card.Body>
+                    <Card.Title>{project.title}</Card.Title>
+                    <Card.Text>{project.description}</Card.Text>
+                    <div className="button-group">
+                      <Button 
+                        variant="outline-light" 
+                        size="sm" 
+                        onClick={() => handleShowDetails(project)}
+                      >
+                        Learn More
+                      </Button>
+                      <Button 
+                        variant="outline-light" 
+                        size="sm"
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Visit Project
+                      </Button>
+                    </div>
+                  </Card.Body>
+                </Card>
               ))}
             </Row>
           </Container>
