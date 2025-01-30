@@ -1,8 +1,8 @@
 .skills-container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    background-color: #1a1a1d;
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -15,6 +15,7 @@
     letter-spacing: 2px;
     position: relative;
     padding-bottom: 15px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .skills-container h2::after {
@@ -41,26 +42,28 @@
 
 .skill-item {
     position: relative;
-    width: 120px;
-    height: 120px;
-    background: rgba(184, 43, 197, 0.1);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 140px;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.943);
+    clip-path:circle(70px at center);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 1px solid rgba(184, 43, 197, 0.3);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
     margin: 0 auto;
     color: #ffffff;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .skill-item:hover {
     transform: translateY(-10px);
-    background: rgba(184, 43, 197, 0.2);
+    background: rgba(175, 45, 187, 0.327);
     box-shadow: 
         0 0 15px rgba(184, 43, 197, 0.3),
         0 0 30px rgba(184, 43, 197, 0.2),

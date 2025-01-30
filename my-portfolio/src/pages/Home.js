@@ -7,11 +7,11 @@ import '../styles/Projects.css';
 import '../styles/Skills.css';
 
 const homeSkills = [
-    { name: 'JavaScript', level: 'Advanced', progress: 90 },
-    { name: 'React', level: 'Advanced', progress: 85 },
-    { name: 'Node.js', level: 'Intermediate', progress: 75 },
-    { name: 'CSS', level: 'Advanced', progress: 90 },
-    { name: 'HTML', level: 'Advanced', progress: 90 }
+    { name: 'IBM Full Stack Software Developer Professional Certificate (V5)' },
+    { name: 'Generative AI Essentials for Software Developers' },
+    { name: 'DevOps Essentials' },
+    { name: 'Front-end Development with React V2' },
+    { name: 'Software Engineering Essentials' }
 ];
 
 const projects = [
@@ -195,20 +195,11 @@ const Home = () => {
           <Container>
             <Row className="mb-4">
               <Col>
-                <h2 className="section-title">Familiar Languages</h2>
+                <h2 className="section-title">Key Certifications</h2>
                 <div className="skills-container">
                   {homeSkills.map((skill, index) => (
                     <div key={index} className="home-skill-item">
-                      <div className="skill-header">
-                        <span className="skill-name">{skill.name}</span>
-                        <span className="skill-level">{skill.level}</span>
-                      </div>
-                      <div className="progress-container">
-                        <div 
-                          className="progress-bar" 
-                          style={{ width: `${skill.progress}%` }}
-                        />
-                      </div>
+                      {skill.name}
                     </div>
                   ))}
                 </div>

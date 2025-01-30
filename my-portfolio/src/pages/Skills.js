@@ -2,14 +2,28 @@ import React from 'react';
 import Header from '../components/Header';
 import '../styles/Skills.css';
 
-const skills = [
-    { name: 'JavaScript' },
-    { name: 'React' },
-    { name: 'Node.js' },
-    { name: 'HTML & CSS' },
-    { name: 'Python' },
-    { name: 'Git' },
-    { name: 'SQL' },
+const badges = [
+    { name: 'DevOps Capstone Certificate' },
+    { name: 'IBM Full Stack Software Developer Professional Certificate' },
+    { name: 'Git and GitHub' },
+    { name: 'Node and Express' },
+    { name: 'Linux Commands & Shell Scripting' },
+    { name: 'DevOps' },
+    { name: 'Agile Development and Scrum' },
+    { name: 'Front-end Development with React' },
+    { name: 'Software Engineering' },
+    { name: 'HTML, CSS, & JavaScript' },
+    { name: 'Cloud Computing' },
+    { name: 'Python for Data Science and AI' },
+    { name: 'Python for AI and Application Development' },
+    { name: 'Developing Applications with SQL, Databases, and Django' },
+    { name: 'Container & Kubernetes' },
+    { name: 'Application Development using Microservices and Serverless' },
+    { name: 'Full Stack Application and Software Development' },
+    { name: 'Generative AI Essentials for Software Development' },
+    { name: 'Test Driven Development' },
+    { name: 'Monitoring and Observability for Development' },
+
 ];
 
 const Skills = () => {
@@ -17,15 +31,15 @@ const Skills = () => {
         <div>
             <Header />
             <div className="skills-container">
-                <h2>Familiar Languages</h2>
+                <h2>Certifications & Skills</h2>
                 <div className="skills-list">
-                    {skills.map((skill, index) => (
+                    {badges.map((badge, index) => (
                         <div
                             key={index}
                             className="skill-item"
                             style={{ '--index': index }}
                         >
-                            {skill.name}
+                            {badge.name}
                         </div>
                     ))}
                 </div>
