@@ -60,7 +60,7 @@ const Projects = () => {
         <div>
             <Header />
             <div className="projects-list">
-                <h1>My Projects</h1>
+                <h1>Projects</h1>
                 {projects.map((project, index) => (
                     <div key={index} className="project-item">
                         <h2>{project.title}</h2>
