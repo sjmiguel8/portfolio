@@ -93,79 +93,71 @@
   padding: 0;
 }
 
+/* Projects Section Layout */
 .projects-section .container {
-  max-width: 700px;
-  width: 100%;
+  max-width: 900px;
+  width: 90%;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px;
 }
 
 .projects-section .row {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: auto;
-  padding: 0;
   width: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-right: 15px;
 }
 
 /* Project Cards */
 .project-card {
-  background-color: #000000;
-  border: 0px solid rgb(255, 255, 255);
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-  padding: 0;
-  transition: all 0.3s ease;
-  margin: 0;
   width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
 }
 
 .project-card .card-body {
-  background-color: rgb(0, 0, 0);
-  padding: 15px 25px;
-  display: grid;
-  grid-template-columns: 2fr 3fr auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  border-radius: 40px;
+  padding: 15px 20px;
+  height: 100%;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .project-card .card-title {
-  font-size: 1.4em;
-  color: #ffffff;
+  font-size: 1.2rem;
   margin: 0;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
+  flex: 0 0 200px;
+  color: white;
+
 }
 
 .project-card .card-text {
-  color: #ffffff;
-  font-size: 1.0rem;
-  line-height: 1.6;
-  margin: 0;
-  opacity: 0.9;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  flex: 1;
+  margin: 0 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: white;
 }
 
 .button-group {
   display: flex;
-  flex-direction: column;
   gap: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.button-group .btn {
-  padding: 8px 16px;
-  background-color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  white-space: nowrap;
-}
-
-.button-group .btn:hover {
-  background-color: #ffffff;
+  flex: 0 0 auto;
 }
 
 .project-card:hover {
@@ -219,14 +211,23 @@
     font-size: 1.1em;
   }
 
+  .project-card {
+    height: auto;
+    min-height: 150px;
+  }
+  
   .project-card .card-body {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    flex-direction: column;
     text-align: center;
   }
   
+  .project-card .card-title {
+    flex: none;
+    margin-bottom: 10px;
+  }
+  
   .button-group {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .skills-container {
