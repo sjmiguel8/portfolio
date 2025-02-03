@@ -32,24 +32,6 @@ const homeSkills = [
 
 const projects = [
   {
-    title: 'FlutterTry',
-    description: 'AI with a task manager, document analysis, image emotion recognition, and more...',
-    fullDescription: 'FlutterTry is an innovative AI-powered application that integrates a variety of features to enhance productivity and user experience. It includes a task manager to help you organize and prioritize your tasks efficiently. The document analysis feature allows you to extract and analyze information from various documents quickly. Additionally, the image emotion recognition tool can detect and interpret emotions from images, providing valuable insights. The application also includes a simple memory game to help improve cognitive skills. Overall, FlutterTry is designed to be a versatile tool for both personal and professional use.',
-    link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
-  },
-  {
-    title: 'Book Chatter',
-    description: 'Chat with different chatbots based on famous book characters...',
-    fullDescription: 'Book Chatter is an engaging platform that allows users to interact with chatbots modeled after famous book characters. Whether you want to have a conversation with Sherlock Holmes, Elizabeth Bennet, or other beloved characters, Book Chatter provides a unique and entertaining experience. The platform also features a dream and psychoanalysis bot, offering users the opportunity to explore their subconscious thoughts and dreams. Book Chatter aims to bring literature to life by combining the charm of classic characters with modern AI technology.',
-    link: 'http://bookchatter.s3-website.us-east-2.amazonaws.com/'
-  },
-  {
-    title: 'Socrates S',
-    description: 'A sophisticated system for managing and tracking educational progress...',
-    fullDescription: 'Socrates S is a comprehensive educational management system designed to support educators and students in tracking and enhancing learning outcomes. The platform offers detailed progress reports, personalized learning plans, and a wide range of interactive educational resources. With advanced analytics, Socrates S provides insights into student performance, helping educators identify areas for improvement and tailor their teaching strategies accordingly. The user-friendly interface ensures that both teachers and students can navigate the system with ease, making it an invaluable tool for modern education.',
-    link: 'http://socratess.s3-website.us-east-2.amazonaws.com/login/'
-  },
-  {
     title: 'Ginx',
     description: 'A modern web portfolio showcasing my professional work and skills.',
     link: 'https://main.d1wv2h88ci88t8.amplifyapp.com/'
@@ -70,19 +52,19 @@ const projects = [
     link: 'https://main.d2n5cghagdyuz8.amplifyapp.com/'
   },
   {
-    title: 'fullstack',
-    description: 'A comprehensive full-stack web application demonstration.',
-    link: 'https://main.d292ubbvg4ueuu.amplifyapp.com/'
-  },
-  {
-    title: 'OrganizeBot',
-    description: 'An AI-powered organization and productivity tool.',
-    link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
+    title: 'weather-app',
+    description: 'A weather application that provides real-time weather data.',
+    link: 'https://tundra-swart.vercel.app/'
   },
   {
     title: 'CrimeMapper',
     description: 'A visualization tool for mapping and analyzing crime data.',
     link: 'http://crimemapper.s3-website.us-east-2.amazonaws.com/'
+  },
+  {
+    title: 'DoR',
+    description: 'TBD',
+    link: 'https://main.da8dp7tleik2e.amplifyapp.com/'
   },
 ];
 

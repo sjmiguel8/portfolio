@@ -4,21 +4,6 @@ import '../styles/Projects.css';
 
 const projects = [
     {
-        title: 'FlutterTry',
-        description: 'AI with a task manager, document analysis, image emotion recognition, simple memory game, and more.',
-        link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
-    },
-    {
-        title: 'Book Chatter & Dream Analysis',
-        description: 'Different chatbots based off famous book characters, chat with some of your favorite characters, or try the dream and psychoanalysis bot.',
-        link: 'http://bookchatter.s3-website.us-east-2.amazonaws.com/'
-    },
-    {
-        title: 'Socrates S',
-        description: 'A sophisticated system for managing and tracking educational progress.',
-        link: 'http://socratess.s3-website.us-east-2.amazonaws.com/login/'
-    },
-    {
         title: 'Ginx',
         description: 'A modern web portfolio showcasing my professional work and skills.',
         link: 'https://main.d1wv2h88ci88t8.amplifyapp.com/'
@@ -39,19 +24,19 @@ const projects = [
         link: 'https://main.d2n5cghagdyuz8.amplifyapp.com/'
     },
     {
-        title: 'fullstack',
-        description: 'A comprehensive full-stack web application demonstration.',
-        link: 'https://main.d292ubbvg4ueuu.amplifyapp.com/'
-    },
-    {
-        title: 'OrganizeBot',
-        description: 'An AI-powered organization and productivity tool.',
-        link: 'http://fluttertryweb.s3-website.us-east-2.amazonaws.com/'
+        title: 'weather-app',
+        description: 'A weather application that provides real-time weather data.',
+        link: 'https://tundra-swart.vercel.app/'
     },
     {
         title: 'CrimeMapper',
         description: 'A visualization tool for mapping and analyzing crime data.',
         link: 'http://crimemapper.s3-website.us-east-2.amazonaws.com/'
+    },
+    {
+        title: 'DoR',
+        description: 'TBD',
+        link: 'https://main.da8dp7tleik2e.amplifyapp.com/'
     },
 ];
 
