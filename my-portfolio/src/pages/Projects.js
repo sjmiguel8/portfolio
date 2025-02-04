@@ -14,9 +14,9 @@ const projects = [
         link: 'https://main.d1eqxt1nr5en92.amplifyapp.com/'
     },
     {
-        title: 'slime',
-        description: 'An interactive web game featuring slime physics and animations.',
-        link: 'https://main.d2409w8ghk72v2.amplifyapp.com/'
+        title: 'crypto-tracker',
+        description: 'A cryptocurrency tracker that provides real-time data on crypto prices.',
+        link: 'https://tux-chi.vercel.app/'
     },
     {
         title: 'ChooseWisely',
