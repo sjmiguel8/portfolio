@@ -37,6 +37,11 @@ const projects = [
     link: 'https://nextjs-boilerplate-virid-eight-41.vercel.app/'
   },
   {
+    title: 'ISS Tracker',
+    description: 'A real-time tracker for the International Space Station.',
+    link: 'https://trix-smoky.vercel.app/'
+  },
+  {
     title: 'Weather App',
     description: 'A weather application that provides real-time weather data.',
     link: 'https://tundra-swart.vercel.app/'

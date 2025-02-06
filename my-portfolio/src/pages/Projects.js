@@ -3,10 +3,15 @@ import Header from '../components/Header';
 import '../styles/Projects.css';
 
 const projects = [
-    {
+      {
         title: 'Developer Job Search',
         description: 'Job listings for Houston developers in software, devops, and fullstack.',
         link: 'https://nextjs-boilerplate-virid-eight-41.vercel.app/'
+      },
+      {
+        title: 'ISS Tracker',
+        description: 'A real-time tracker for the International Space Station.',
+        link: 'https://trix-smoky.vercel.app/'
       },
       {
         title: 'Weather App',
