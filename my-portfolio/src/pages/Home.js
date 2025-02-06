@@ -32,39 +32,29 @@ const homeSkills = [
 
 const projects = [
   {
+    title: 'Developer Job Search',
+    description: 'Job listings for Houston developers in software, devops, and fullstack.',
+    link: 'https://nextjs-boilerplate-virid-eight-41.vercel.app/'
+  },
+  {
+    title: 'Weather App',
+    description: 'A weather application that provides real-time weather data.',
+    link: 'https://tundra-swart.vercel.app/'
+  },
+  {
     title: 'Ginx',
     description: 'A modern web portfolio showcasing my professional work and skills.',
     link: 'https://main.d1wv2h88ci88t8.amplifyapp.com/'
   },
   {
-    title: 'e-plant-shopping',
+    title: 'E Plants',
     description: 'An e-commerce platform for buying and selling plants online.',
     link: 'https://main.d1eqxt1nr5en92.amplifyapp.com/'
   },
   {
-    title: 'crypto-tracker',
+    title: 'Crypto Tracker',
     description: 'A cryptocurrency tracker that provides real-time data on crypto prices.',
     link: 'https://tux-chi.vercel.app/'
-  },
-  {
-    title: 'ChooseWisely',
-    description: 'A decision-making application helping users make informed choices.',
-    link: 'https://main.d2n5cghagdyuz8.amplifyapp.com/'
-  },
-  {
-    title: 'weather-app',
-    description: 'A weather application that provides real-time weather data.',
-    link: 'https://tundra-swart.vercel.app/'
-  },
-  {
-    title: 'CrimeMapper',
-    description: 'A visualization tool for mapping and analyzing crime data.',
-    link: 'http://crimemapper.s3-website.us-east-2.amazonaws.com/'
-  },
-  {
-    title: 'DoR',
-    description: 'TBD',
-    link: 'https://main.da8dp7tleik2e.amplifyapp.com/'
   },
 ];
 
