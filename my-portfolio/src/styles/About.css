@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background: linear-gradient(135deg, #4d4c4c, #3030306d);
     color: #ffffff;
     line-height: 1.6;
 }
@@ -19,7 +19,7 @@ body {
 .header {
     text-align: center;
     padding: 50px 0;
-    background-color: #000000;
+    background: linear-gradient(135deg, #4d4c4c, #3030306d);
 }
 
 .header h1 {
@@ -85,7 +85,7 @@ body {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
-    background-color: #000000;
+    background: linear-gradient(135deg, #4d4c4c, #3030306d);
     color: #fff;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -100,7 +100,6 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #000000;
     color: #ffffff;
     min-height: calc(100vh - 60px);
     padding-top: 60px; /* Match header height */
@@ -109,8 +108,6 @@ body {
 .about-content {
     text-align: center;
     padding: 50px 0;
-    background-color: #000000;
-    color: #ffffff;
 }
 
 .about-text {

@@ -2,7 +2,6 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    background-color: #000000;
     color: #ffffff;
 }
 
@@ -26,7 +25,7 @@
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background: linear-gradient(90deg, transparent, #b82bc5, transparent);
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
 }
 
 .skills-list {
@@ -39,7 +38,6 @@
 }
 
 .skill-item {
-    background: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     padding: 10px 20px;
     margin: 5px;
