@@ -32,17 +32,13 @@ const Skills = () => {
             <Header />
             <div className="skills-container">
                 <h2>Certifications & Skills</h2>
-                <div className="skills-list">
-                    {badges.map((badge, index) => (
-                        <div
-                            key={index}
-                            className="skill-item"
-                            style={{ '--index': index }}
-                        >
-                            {badge.name}
-                        </div>
-                    ))}
-                </div>
+<ul className="skills-list">
+    {badges.map((badge, index) => (
+        <li key={index} className="skill-item">
+            {badge.name}
+        </li>
+    ))}
+</ul>
             </div>
         </div>
     );
