@@ -30,7 +30,7 @@ body {
 }
 
 .project-item {
-    background: linear-gradient(135deg, #4d4c4c, #3030306d);
+    background: linear-gradient(135deg, #1d1d1d, #3030306d);
     padding: 12px 20px;
     border-radius: 20px;
     width: 100%;

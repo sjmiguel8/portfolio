@@ -4,6 +4,11 @@ import '../styles/Projects.css';
 
 const projects = [
       {
+        title: 'Debate.com',
+        description: 'A fully functional debate platform that allows users to create posts, login, post status updates.',
+        link: 'https://chit-chat-alpha-six.vercel.app/'
+      },
+      {
         title: 'Data Driven Analytics Bot',
         description: 'Upload a .csv or .json file, have it parsed, and select from a list of analytic choices.',
         link: 'https://v0-ssda.vercel.app/'
@@ -20,12 +25,12 @@ const projects = [
       },
       {
         title: 'Weather App',
-        description: 'A weather application that provides real-time weather data.',
+        description: 'A simple weather application that provides real-time weather data.',
         link: 'https://tundra-swart.vercel.app/'
       },
       {
         title: 'Ginx',
-        description: 'A modern web portfolio showcasing my professional work and skills.',
+        description: 'A car dealership website, with the backend displaying dealerships.',
         link: 'https://main.d1wv2h88ci88t8.amplifyapp.com/'
       },
       {
