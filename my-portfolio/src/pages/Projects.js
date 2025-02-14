@@ -4,13 +4,18 @@ import '../styles/Projects.css';
 
 const projects = [
       {
+        title: 'Data Driven Analytics Bot',
+        description: 'Upload a .csv or .json file, have it parsed, and select from a list of analytic choices.',
+        link: 'https://v0-ssda.vercel.app/'
+      },
+      {
         title: 'Developer Job Search',
-        description: 'Job listings for Houston developers in software, devops, and fullstack.',
-        link: 'https://nextjs-boilerplate-virid-eight-41.vercel.app/'
+        description: 'Real time job search for developers. Three different cateogories to choose from.',
+        link: 'https://devjobsearch.vercel.app/'
       },
       {
         title: 'ISS Tracker',
-        description: 'A real-time tracker for the International Space Station.',
+        description: 'A real-time tracker for the International Space Station, and real time space news.',
         link: 'https://trix-smoky.vercel.app/'
       },
       {

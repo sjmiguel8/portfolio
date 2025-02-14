@@ -8,7 +8,7 @@ const Home = () => {
             <Header />
             <div className="hero-section">
                 <h1>Welcome to My Portfolio</h1>
-                <p className="hero-subtitle">Explore my work and skills</p>
+                <p className="hero-subtitle">To view all my deployed projects, click on the projects button below.</p>
                 <div className="hero-buttons">
     <div className="hero-button-container">
         <a href="/about" className="hero-button">About</a>
