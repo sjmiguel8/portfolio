@@ -6,23 +6,23 @@
   width: 100%;
   z-index: 9999;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  background: #000000;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   height: 45px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px rgba(103, 58, 183, 0.3);
   display: flex;
   align-items: center;
 }
 
 .header.scrolled {
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  box-shadow: 0 2px 20px rgba(103, 58, 183, 0.2);
+  background: #000000;
 }
 
 .nav-link.active {
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
-  color: #ffffff4e !important;
+  background: #6441A5;
+  color: #fff !important;
   border-radius: 5px;
   font-weight: 600;
 }
@@ -34,6 +34,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+
 }
 
 .navbar.scrolled {
@@ -63,7 +64,7 @@
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
   animation: animate1 2s linear infinite;
 }
 
@@ -74,7 +75,7 @@
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
   animation: animate2 2s linear infinite;
 }
 
@@ -89,13 +90,25 @@
 }
 
 .brand-text {
-  color: #ffffff;
-  text-shadow: 0 0 10px rgba(184, 43, 197, 0.5);
+  background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 3s linear infinite;
+  text-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .brand-dot {
-  color: linear-gradient(135deg, #4d4c4c, #3030306d);
+  color: #ff00ff;
   margin: 0 2px;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
 .brand-subtext {
@@ -109,6 +122,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 
 .nav-item {
@@ -119,7 +133,7 @@
   padding: 0.5rem 1rem !important;
   color: #ffffff !important;
   border-radius: 5px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -131,8 +145,9 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  background: linear-gradient(135deg, #6441A5, #2a0845);
   transition: 0.5s;
+  opacity: 0.5;
 }
 
 .nav-link:hover::before {
@@ -140,21 +155,21 @@
 }
 
 .nav-link:hover {
-  color: linear-gradient(135deg, #4d4c4c, #3030306d);
+  color: #ff00ff !important;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
 }
 
 .contact-link {
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
   border-radius: 25px;
   padding: 8px 16px;
   margin-left: 0.5rem;
-  box-shadow: 0 0 15px rgba(184, 43, 197, 0.3);
+  box-shadow: 0 0 15px rgba(103, 58, 183, 0.3);
 }
 
 .contact-link:hover {
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  background: linear-gradient(135deg, #2a0845, #6441A5);
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(103, 58, 183, 0.5);
 }
 
 /* Hamburger Menu */
@@ -165,7 +180,7 @@
   height: 30px;
   position: relative;
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  background: linear-gradient(135deg, #6441A5, #2a0845);
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -174,7 +189,7 @@
 
 .navbar-toggler:focus {
   outline: none;
-  box-shadow: 0 0 10px #0000008e;
+  box-shadow: 0 0 10px rgba(103, 58, 183, 0.5);
 }
 
 .toggler-icon {
@@ -220,7 +235,7 @@
   top: 45px;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg, #4d4c4c, #3030306d);
+  background: linear-gradient(135deg, #2a0845, #6441A5);
   padding: 0;
   max-height: 0;
   overflow: hidden;
