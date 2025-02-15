@@ -14,6 +14,11 @@ const projects = [
         link: 'https://v0-ssda.vercel.app/'
       },
       {
+        title: 'Pet Catalog Dashboard',
+        description: 'A dashboard for a pet catalog, with NeonDB and MongoDB backend.',
+        link: 'https://dashboard-self-nine-27.vercel.app/dashboard'
+      },
+      {
         title: 'Developer Job Search',
         description: 'Real time job search for developers. Three different cateogories to choose from.',
         link: 'https://devjobsearch.vercel.app/'
