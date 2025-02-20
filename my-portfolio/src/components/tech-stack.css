@@ -1,0 +1,55 @@
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.tech-category-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tech-category-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-category-title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+    border-bottom: 2px solid rgba(174, 35, 220, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.tech-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-skill-tag {
+    background: rgba(174, 35, 220, 0.2);
+    color: #ae23dc;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-skill-tag:hover {
+    background: rgba(174, 35, 220, 0.3);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .tech-stack-grid {
+        grid-template-columns: 1fr;
+    }
+}
