@@ -9,7 +9,7 @@ interface ProjectCardProps {
   tags: string[];
 }
 
-export default function ProjectCard({ title, description, image, link, tags }: ProjectCardProps) {
+const ProjectCard = ({ title, description, image, link, tags }: ProjectCardProps) => {
   return (
     <div className="project-card">
       <div className="project-image">
@@ -37,4 +37,6 @@ export default function ProjectCard({ title, description, image, link, tags }: P
       </div>
     </div>
   );
-}
+};
+
+export default ProjectCard;
