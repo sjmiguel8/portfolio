@@ -83,3 +83,10 @@
 .project-link:hover {
     color: #ffffff;
 }
+
+.project-card a {
+    text-decoration: none;
+    color: white;
+    
+
+}
