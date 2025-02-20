@@ -3,7 +3,7 @@
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
 }
 
 .project-card:hover {
@@ -39,7 +39,7 @@
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 0.75rem;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .project-description {
