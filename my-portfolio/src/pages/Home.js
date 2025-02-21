@@ -100,7 +100,7 @@ const Home = () => {
                         </div>
                         <div className="projects-grid">
                             {projects.map((project, index) => (
-                                <div key={index} className="project-card" style={{'--accent-color': project.color}}>
+                                <div key={index} className="project-card">
                                     <div className="project-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                             <rect x="3" y="3" width="18" height="18" rx="2"/>
