@@ -3,13 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd my-portfolio
         - npm ci
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: my-portfolio/build
+    baseDirectory: portfolio/build
     files:
       - '**/*'
   cache:
