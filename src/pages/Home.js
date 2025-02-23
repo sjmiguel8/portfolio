@@ -6,7 +6,7 @@ const projects = [
     {
         title: 'ChittChat (Debate Platform)',
         description: 'A fully functional debate platform that has a working login/registration, allows user to create forums, post inside of forums, post status updates on their profile and this is all stored in a database.',
-        link: 'https://main.d3r9csobb0rzy.amplifyapp.com/projects/',
+        link: 'https://chit-chat-alpha-six.vercel.app/',
         color: '#FF6B6B',
         tags: ["Next.js", "React", "Javascript", "Node.js", "Python", "HTML", "CSS", "Supabase", "Terraform"]
     },

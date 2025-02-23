@@ -143,6 +143,7 @@
     background: rgba(0, 0, 0, 0);
     opacity: 0.1;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .project-card:hover {
@@ -205,6 +206,9 @@
     font-size: 0.9em;
     font-weight: 600;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .arrow {
