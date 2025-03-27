@@ -4,6 +4,23 @@ import '../styles/Home.css';
 
 const projects = [
     {
+<<<<<<< HEAD
+=======
+        title: 'Fashion Fit',
+        description: 'This is a web platform that allows users to search for clothing items, and see how they would look on a 3D model. Includes a 3D model viewer and sliders to adjust the mannequin\'s body measurements.',
+        link: 'https://fashionfit.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
+    },
+    {
+        title: 'Visual API Composer',
+        description: 'A web interface that allows users to create and test API requests visually, and then export them as code. Includes the ability to add headers, query parameters, and request body.',
+        link: 'https://apicomposer.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
+    },
+    {
+>>>>>>> 125d93e (Initial commit)
         title: 'ChittChat (Debate Platform)',
         description: 'A fully functional debate platform that has a working login/registration, allows user to create forums, post inside of forums, post status updates on their profile and this is all stored in a database.',
         link: 'https://chit-chat-alpha-six.vercel.app/',
@@ -18,6 +35,7 @@ const projects = [
         tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
     },
     {
+<<<<<<< HEAD
         title: 'Pet Catalog Dashboard',
         description: 'A dashboard for a pet catalog, with NeonDB and MongoDB backend for storing products, users, and orders.',
         link: 'https://dashboard-self-nine-27.vercel.app/dashboard/',
@@ -25,6 +43,8 @@ const projects = [
         tags: ["Next.js", "React", "Javascript", "Node.js", "MongoDB", "NeonDB", "Typescript", "HTML", "CSS"]
     },
     {
+=======
+>>>>>>> 125d93e (Initial commit)
         title: 'Developer Job Search',
         description: 'Real time job search for developers. Three different categories to choose from.',
         link: 'https://devjobsearch.vercel.app/',
@@ -32,6 +52,7 @@ const projects = [
         tags: ["React", "Node.js", "APIs", "JavaScript", "HTML", "CSS"]
     },
     {
+<<<<<<< HEAD
         title: 'ISS Tracker',
         description: 'A real-time tracker for the International Space Station, and real time space news.',
         link: 'https://trix-smoky.vercel.app/',
@@ -46,6 +67,8 @@ const projects = [
         tags: ["React", "Weather API", "JavaScript", "HTML", "CSS"]
     },
     {
+=======
+>>>>>>> 125d93e (Initial commit)
         title: 'Ginx',
         description: 'A car dealership website, with the backend displaying dealerships.',
         link: 'https://main.d1wv2h88ci88t8.amplifyapp.com/',
@@ -59,6 +82,7 @@ const projects = [
         color: '#88D8B0',
         tags: ["React", "E-commerce", "Node.js", "AWS", "JavaScript", "HTML", "CSS"]
     },
+<<<<<<< HEAD
     {
         title: 'Crypto Tracker',
         description: 'A cryptocurrency tracker that provides real-time data on crypto prices.',
@@ -66,6 +90,8 @@ const projects = [
         color: '#FFB668',
         tags: ["React", "Crypto API", "Real-time Data", "JavaScript", "HTML", "CSS"]
     }
+=======
+>>>>>>> 125d93e (Initial commit)
 ];
 
 const Home = () => {

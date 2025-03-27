@@ -4,6 +4,23 @@ import '../styles/Projects.css';
 
 const projects = [
     {
+<<<<<<< HEAD
+=======
+        title: 'Fashion Fit',
+        description: 'This is a web platform that allows users to search for clothing items, and see how they would look on a 3D model.',
+        link: 'https://fashionfit.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
+    },
+    {
+        title: 'Visual API Composer',
+        description: 'A web interface that allows users to create and test API requests visually, and then export them as code.',
+        link: 'https://apicomposer.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
+    },
+    {
+>>>>>>> 125d93e (Initial commit)
         title: 'ChittChat (Debate Platform)',
         description: 'A fully functional debate platform that has a working login/registration, allows user to create forums, post inside of forums, post status updates on their profile and this is all stored in a database.',
         link: 'https://chit-chat-alpha-six.vercel.app/',
