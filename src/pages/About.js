@@ -10,9 +10,9 @@ const About = () => {
                 <h1>About Me</h1>
                 <div className="about-content">
                     <div className="about-text">
-                        <p>Hello! I'm Miguel Bonilla, a passionate software developer with experience in building web applications using modern technologies. I specialize in JavaScript, React, and Node.js, and I love creating intuitive and dynamic user experiences.</p>
-                        <p>With a strong background in computer science and a keen eye for design, I strive to deliver high-quality code and innovative solutions. I am always eager to learn new skills and take on challenging projects.</p>
-                        <p>When I'm not coding, you can find me exploring new technologies, reading tech blogs, or enjoying outdoor activities.</p>
+                        <p>I'm a highly motivated and results-driven Full-Stack Developer with a unique Philosophy background and proven problem-solving abilities. My journey in tech has led me to develop self-taught expertise in developing and deploying web applications using modern technologies.</p>
+                        <p>I work with cutting-edge tools including React, Next.js, Node.js, AWS, and Docker. As an IBM Certified Full-Stack Software Developer and DevOps practitioner, I bring a comprehensive understanding of the development lifecycle.</p>
+                        <p>I'm particularly interested in applying my technical skills to innovative projects within the government sector, where I can contribute to meaningful solutions that serve the public interest.</p>
                     </div>
                 </div>
             </div>

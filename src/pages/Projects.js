@@ -5,77 +5,77 @@ import '../styles/Projects.css';
 const projects = [
     {
         title: 'Fashion Fit',
-        description: 'This is a web platform that allows users to search for clothing items, and see how they would look on a 3D model.',
+        description: 'Developed a web-based platform, Fashion Fit, enabling users to visualize clothing items on a 3D model. Implemented a 3D model viewer with interactive controls, allowing users to adjust the mannequin\'s measurements. This project showcases skills in front-end development, including React and Next.js, and demonstrates the ability to create user-friendly and interactive e-commerce tools.',
         link: 'https://fashionfit.vercel.app/',
         color: '#4ECDC4',
         tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
     },
     {
         title: 'Visual API Composer',
-        description: 'A web interface that allows users to create and test API requests visually, and then export them as code.',
+        description: 'Designed and built a Visual API Composer, a web interface that empowers users to create and test API requests visually. The application facilitates efficient API development by providing tools to add headers, query parameters, and request bodies, and export the configured requests as code. This project highlights expertise in front-end development and user interface design.',
         link: 'https://apicomposer.vercel.app/',
         color: '#4ECDC4',
         tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
     },
     {
-        title: 'ChittChat (Debate Platform)',
-        description: 'A fully functional debate platform that has a working login/registration, allows user to create forums, post inside of forums, post status updates on their profile and this is all stored in a database.',
+        title: 'ChitChat',
+        description: 'Engineered ChittChat, a fully functional debate platform featuring secure user login/registration, forum creation and participation, and user profile status updates. Implemented a robust backend system using Supabase for data storage, demonstrating full-stack development capabilities. This project emphasizes skills in database management, user authentication, and building interactive community platforms.',
         link: 'https://chit-chat-alpha-six.vercel.app/',
         color: '#FF6B6B',
         tags: ["Next.js", "React", "Javascript", "Node.js", "Python", "HTML", "CSS", "Supabase", "Terraform"]
     },
     {
         title: 'Data-Driven Strategy Bot',
-        description: 'Web interface that allows users to upload a .csv or .json file, have it parsed, and select from a list of analytic choices to view.',
+        description: 'Developed a web application that enables users to upload and parse CSV or JSON files and perform various data analysis tasks. The Data-Driven Strategy Bot provides users with a selection of analytical tools to gain insights from their data. This project demonstrates skills in data processing, front-end development, and creating tools for data visualization.',
         link: 'https://v0-ssda.vercel.app/',
         color: '#4ECDC4',
         tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
     },
     {
         title: 'Pet Catalog Dashboard',
-        description: 'A dashboard for a pet catalog, with NeonDB and MongoDB backend for storing products, users, and orders.',
+        description: 'Built a comprehensive Pet Catalog Dashboard for managing products, users, and orders. Implemented both NeonDB and MongoDB backends to provide a robust and scalable data storage solution. This project showcases full-stack development skills, including database design and dashboard creation.',
         link: 'https://dashboard-self-nine-27.vercel.app/dashboard',
         color: '#45B7D1',
         tags: ["Next.js", "React", "Javascript", "Node.js", "MongoDB", "NeonDB", "Typescript", "HTML", "CSS"]
     },
     {
         title: 'Developer Job Search',
-        description: 'Real time job search for developers. Three different categories to choose from.',
+        description: 'Created a real-time job search application specifically for developers. The application aggregates and displays job listings across three categories, providing a valuable tool for job seekers in the tech industry. This project demonstrates skills in API integration and front-end development.',
         link: 'https://devjobsearch.vercel.app/',
         color: '#96CEB4',
         tags: ["React", "Node.js", "APIs", "JavaScript", "HTML", "CSS"]
     },
     {
         title: 'ISS Tracker',
-        description: 'A real-time tracker for the International Space Station, and real time space news.',
+        description: 'Developed a real-time International Space Station tracker and integrated a space news feed. This application provides users with up-to-date information on the ISS and space-related events, showcasing skills in working with real-time data and APIs.',
         link: 'https://trix-smoky.vercel.app/',
         color: '#7B68EE',
         tags: ["React", "APIs", "Real-time Data", "JavaScript", "HTML", "CSS"]
     },
     {
         title: 'Weather App',
-        description: 'A simple weather application that provides real-time weather data.',
+        description: 'Designed and implemented a user-friendly weather application that delivers real-time weather data. This project demonstrates proficiency in front-end development and API integration.',
         link: 'https://tundra-swart.vercel.app/',
         color: '#FF9A8B',
         tags: ["React", "Weather API", "JavaScript", "HTML", "CSS"]
     },
     {
         title: 'Ginx',
-        description: 'A car dealership website, with the backend displaying dealerships.',
+        description: 'Built a car dealership website, Ginx, with a backend system for managing dealership information. This project highlights full-stack development skills, including front-end design and backend database integration.',
         link: 'https://main.d1wv2h88ci88t8.amplifyapp.com/',
         color: '#6C5B7B',
         tags: ["React", "Node.js", "AWS", "Database", "JavaScript", "HTML", "CSS"]
     },
     {
         title: 'E Plants',
-        description: 'An e-commerce platform for buying and selling plants online.',
+        description: 'Developed E Plants, an e-commerce platform for buying and selling plants online. This project showcases skills in building e-commerce applications, including front-end development and potentially order management and product catalog features.',
         link: 'https://main.d1eqxt1nr5en92.amplifyapp.com/',
         color: '#88D8B0',
         tags: ["React", "E-commerce", "Node.js", "AWS", "JavaScript", "HTML", "CSS"]
     },
     {
         title: 'Crypto Tracker',
-        description: 'A cryptocurrency tracker that provides real-time data on crypto prices.',
+        description: 'Created a cryptocurrency tracker that provides users with real-time data on cryptocurrency prices and market trends. This project demonstrates skills in working with real-time data, APIs, and front-end development.',
         link: 'https://tux-chi.vercel.app/',
         color: '#FFB668',
         tags: ["React", "Crypto API", "Real-time Data", "JavaScript", "HTML", "CSS"]
