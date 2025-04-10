@@ -10,9 +10,22 @@ const About = () => {
                 <h1>About Me</h1>
                 <div className="about-content">
                     <div className="about-text">
-                        <p>I'm a highly motivated and results-driven Full-Stack Developer with a unique Philosophy background and proven problem-solving abilities. My journey in tech has led me to develop self-taught expertise in developing and deploying web applications using modern technologies.</p>
-                        <p>I work with cutting-edge tools including React, Next.js, Node.js, AWS, and Docker. As an IBM Certified Full-Stack Software Developer and DevOps practitioner, I bring a comprehensive understanding of the development lifecycle.</p>
-                        <p>I'm particularly interested in applying my technical skills to innovative projects within the government sector, where I can contribute to meaningful solutions that serve the public interest.</p>
+                        <h2>Summary</h2>
+                        <p>Philosophy graduate with over 1 year of experience designing, developing, and deploying full-stack software solutions.
+Proficient in JavaScript, Python, React, Node.js, and AWS, with hands-on experience in Agile methodologies and DevOps
+practices. Certified in Full-Stack Software Development and DevOps by IBM, with a proven track record of building
+production-ready web applications using modern frameworks and tools like Docker and Terraform. Passionate about solving
+complex problems and delivering end-to-end solutions in collaborative, cross-functional teams.</p>
+                    
+                <h2>Education</h2>
+                                    <p><strong>University of Houston | Houston, TX</strong><br />
+                                        Philosophy | 05/2024<br />
+                                        Bachelor of Arts in Philosophy</p>
+                                    <p><strong>Strake Jesuit College Prep | Houston, TX</strong><br />
+                                        High School Diploma | 05/2017</p>
+                                    
+                                    <h2>Certificates</h2>
+                                    <p>IBM Full-Stack Software Developer Certificate, IBM DevOps and Software Engineering Certificate</p>
                     </div>
                 </div>
             </div>

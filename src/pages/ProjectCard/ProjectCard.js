@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
-import '../styles/Projects.css';
+import Header from '../../components/Header';
+import './ProjectCard.module.css';
+import '../../styles/Projects.css';
 
 const projects = [
     {
@@ -82,7 +83,43 @@ const projects = [
     }
 ];
 
+const ProjectCard = ({ project }) => {
+    return (
+        <div className="project-card">
+            <div className="project-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <path d="M3 9h18" />
+                </svg>
+            </div>
+            <div className="project-details">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+                <div className="project-tags">
+                    {project.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="project-tag">{tag}</span>
+                    ))}
+                </div>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="view-project">
+                    View Project
+                    <span className="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    );
+};
+
 const Projects = () => {
+    const inProgressProjects = [
+        {
+            title: 'Coinscape',
+            description: 'This project is currently in progress and will be updated soon.',
+            link: 'https://coinsscape.vercel.app/',
+            color: '#FFB668',
+            tags: ["Three.js", "React", "JavaScript", "HTML", "CSS"]
+        },
+    ];
+
     return (
         <div className="projects-container">
             <Header />
@@ -90,27 +127,15 @@ const Projects = () => {
                 <h1>All Projects</h1>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                          <div key={index} className="project-card">
-                            <div className="project-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                    <path d="M3 9h18"/>
-                                </svg>
-                            </div>
-                            <div className="project-details">
-                                <h2>{project.title}</h2>
-                                <p>{project.description}</p>
-                                <div className="project-tags">
-                                    {project.tags.map((tag, tagIndex) => (
-                                        <span key={tagIndex} className="project-tag">{tag}</span>
-                                    ))}
-                                </div>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="view-project">
-                                    View Project
-                                    <span className="arrow">→</span>
-                                </a>
-                            </div>
-                        </div>
+                        <ProjectCard key={index} project={project} />
+                    ))}
+                </div>
+
+                <div className="in-progress-header">Work In Progress</div>
+
+                <div className="projects-grid">
+                    {inProgressProjects.map((project, index) => (
+                        <ProjectCard key={index} project={project} />
                     ))}
                 </div>
             </div>

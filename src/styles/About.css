@@ -45,7 +45,7 @@ body {
 }
 
 .about-section {
-    margin-top: 50px;
+    margin-top: 29px;
 }
 
 .about-section h2 {
@@ -102,12 +102,12 @@ body {
     padding: 20px;
     color: #ffffff;
     min-height: calc(100vh - 60px);
-    padding-top: 60px; /* Match header height */
+    padding-top: 50px; /* Match header height */
 }
 
 .about-content {
     text-align: center;
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
 .about-text {
