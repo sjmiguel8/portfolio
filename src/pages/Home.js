@@ -4,20 +4,6 @@ import '../styles/Home.css';
 
 const projects = [
     {
-        title: 'Fashion Fit',
-        description: 'Developed a web-based platform, Fashion Fit, enabling users to visualize clothing items on a 3D model. Implemented a 3D model viewer with interactive controls, allowing users to adjust the mannequin\'s measurements. This project showcases skills in front-end development, including React and Next.js, and demonstrates the ability to create user-friendly and interactive e-commerce tools.',
-        link: 'https://fashionfit.vercel.app/',
-        color: '#4ECDC4',
-        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
-    },
-    {
-        title: 'Visual API Composer',
-        description: 'Designed and built a Visual API Composer, a web interface that empowers users to create and test API requests visually. The application facilitates efficient API development by providing tools to add headers, query parameters, and request bodies, and export the configured requests as code. This project highlights expertise in front-end development and user interface design.',
-        link: 'https://apicomposer.vercel.app/',
-        color: '#4ECDC4',
-        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
-    },
-    {
         title: 'ChitChat',
         description: 'Engineered ChittChat, a fully functional debate platform featuring secure user login/registration, forum creation and participation, and user profile status updates. Implemented a robust backend system using Supabase for data storage, demonstrating full-stack development capabilities. This project emphasizes skills in database management, user authentication, and building interactive community platforms.',
         link: 'https://chit-chat-alpha-six.vercel.app/',
@@ -32,19 +18,33 @@ const projects = [
         tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
     },
     {
-        title: 'Pet Catalog Dashboard',
-        description: 'Built a comprehensive Pet Catalog Dashboard for managing products, users, and orders. Implemented both NeonDB and MongoDB backends to provide a robust and scalable data storage solution. This project showcases full-stack development skills, including database design and dashboard creation.',
-        link: 'https://dashboard-self-nine-27.vercel.app/dashboard',
-        color: '#45B7D1',
-        tags: ["Next.js", "React", "Javascript", "Node.js", "MongoDB", "NeonDB", "Typescript", "HTML", "CSS"]
-    },
-    {
         title: 'Developer Job Search',
         description: 'Created a real-time job search application specifically for developers. The application aggregates and displays job listings across three categories, providing a valuable tool for job seekers in the tech industry. This project demonstrates skills in API integration and front-end development.',
         link: 'https://devjobsearch.vercel.app/',
         color: '#96CEB4',
         tags: ["React", "Node.js", "APIs", "JavaScript", "HTML", "CSS"]
     },
+    {
+        title: 'Fashion Fit',
+        description: 'Developed a web-based platform, Fashion Fit, enabling users to visualize clothing items on a 3D model. Implemented a 3D model viewer with interactive controls, allowing users to adjust the mannequin\'s measurements. This project showcases skills in front-end development, including React and Next.js, and demonstrates the ability to create user-friendly and interactive e-commerce tools.',
+        link: 'https://fashionfit.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
+    },
+    {
+        title: 'Visual API Composer',
+        description: 'Designed and built a Visual API Composer, a web interface that empowers users to create and test API requests visually. The application facilitates efficient API development by providing tools to add headers, query parameters, and request bodies, and export the configured requests as code. This project highlights expertise in front-end development and user interface design.',
+        link: 'https://apicomposer.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
+    },
+    {
+        title: 'Pet Catalog Dashboard',
+        description: 'Built a comprehensive Pet Catalog Dashboard for managing products, users, and orders. Implemented both NeonDB and MongoDB backends to provide a robust and scalable data storage solution. This project showcases full-stack development skills, including database design and dashboard creation.',
+        link: 'https://dashboard-self-nine-27.vercel.app/dashboard',
+        color: '#45B7D1',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "MongoDB", "NeonDB", "Typescript", "HTML", "CSS"]
+    }
 ];
 
 const Home = () => {
