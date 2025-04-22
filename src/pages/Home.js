@@ -107,8 +107,12 @@ const Home = () => {
                     <div className="featured-projects-container">
                         <div className="featured-projects-header">
                             <h2>Featured Projects</h2>
-                            <iframe src="https://devsspark.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>
-                            <iframe src="https://devsparkshub.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>
+                            <div className="responsive-iframe-wrapper">
+                                <iframe src="https://devsspark.vercel.app/" title="Featured Project 1" frameBorder="0" allowFullScreen></iframe>
+                            </div>
+                            <div className="responsive-iframe-wrapper">
+                                <iframe src="https://devsparkshub.vercel.app/" title="Featured Project 2" frameBorder="0" allowFullScreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </section>
