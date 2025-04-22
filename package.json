@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts start",
-    "build": "CI=false react-scripts build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "license": "MIT",
   "devDependencies": {

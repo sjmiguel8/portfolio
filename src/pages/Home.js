@@ -2,6 +2,24 @@ import React from 'react';
 import Header from '../components/Header';
 import '../styles/Home.css';
 
+const featuredProjects = [
+    {
+        iframe: <iframe src="https://devsspark.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,
+        title: 'Featured Project 1',
+        description: 'Developed DevSpark, a comprehensive web application designed to facilitate the creation and management of developer portfolios. The platform allows users to create, edit, and delete their portfolios, showcasing their skills and projects. This project highlights expertise in full-stack development, including user authentication, data management, and responsive design.',
+        link: 'https://devsspark.vercel.app/',
+        color: '#FF6B6B',
+        tags: ["React", "Node.js", "JavaScript"]
+    },
+    {
+        iframe: <iframe src="https://devsparkshub.vercel.app/" title="Featured Project 2" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,
+        title: 'Featured Project 2',
+        description: 'Create single or multi-page websites with customizable sections, themes, and content. The platform allows users to generate websites tailored to their needs, showcasing skills in front-end development and user experience design. This project emphasizes the ability to create user-friendly tools for website generation.',
+        link: 'https://devsparkshub.vercel.app/',
+        color: '#FF6B6B',
+        tags: ["React", "Node.js", "JavaScript"]
+    },
+];
 const projects = [
     {
         title: 'ChitChat',
@@ -9,6 +27,20 @@ const projects = [
         link: 'https://chit-chat-alpha-six.vercel.app/',
         color: '#FF6B6B',
         tags: ["Next.js", "React", "Javascript", "Node.js", "Python", "HTML", "CSS", "Supabase", "Terraform"]
+    },
+    {
+        title: 'DevSpark',
+        description: 'Developed DevSpark, a comprehensive web application designed to facilitate the creation and management of developer portfolios. The platform allows users to create, edit, and delete their portfolios, showcasing their skills and projects. This project highlights expertise in full-stack development, including user authentication, data management, and responsive design.',
+        link: 'https://devsspark.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
+    },
+    {
+        title: 'DevSparkGenerator',
+        description: 'Create single or multi-page websites with customizable sections, themes, and content. The platform allows users to generate websites tailored to their needs, showcasing skills in front-end development and user experience design. This project emphasizes the ability to create user-friendly tools for website generation.',
+        link: 'https://devsparkshub.vercel.app/',
+        color: '#4ECDC4',
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
     },
     {
         title: 'Data-Driven Strategy Bot',
@@ -49,6 +81,7 @@ const projects = [
 
 const Home = () => {
     return (
+        <>
         <div>
             <Header />
             <div className="hero-section">
@@ -68,45 +101,56 @@ const Home = () => {
                         <a href="/contact" className="hero-button">Contact</a>
                     </div>
                 </div>
-                
-                <section id="projects" className="projects-section">
-                    <div className="projects-container">
-                        <div className="projects-header">
-                            <h2>Projects</h2>
-                            <a href="/projects" className="show-more-btn">
-                                View All Projects →
-                            </a>
-                        </div>
-                        <div className="projects-grid">
-                            {projects.map((project, index) => (
-                                <div key={index} className="project-card">
-                                    <div className="project-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                            <path d="M3 9h18"/>
-                                        </svg>
-                                    </div>
-                                    <div className="project-details">
-                                        <h2>{project.title}</h2>
-                                        <p>{project.description}</p>
-                                        <div className="project-tags">
-                                            {project.tags.map((tag, tagIndex) => (
-                                                <span key={tagIndex} className="project-tag">{tag}</span>
-                                            ))}
-                                        </div>
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="view-project">
-                                            View Project
-                                            <span className="arrow">→</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            ))}
+                    
+
+                <section id="featured-projects" className="featured-projects-section">
+                    <div className="featured-projects-container">
+                        <div className="featured-projects-header">
+                            <h2>Featured Projects</h2>
+                            <iframe src="https://devsspark.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>
+                            <iframe src="https://devsparkshub.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
                 </section>
-            </div>
+                        
+        <section id="projects" className="projects-section">
+            <div className="projects-container">
+                <div className="projects-header">
+                    <h2>Projects</h2>
+                        <a href="/projects" className="show-more-btn">
+                            View All Projects →
+                        </a>
+                    </div>
+                    <div className="projects-grid">
+                        {projects.map((project, index) => (
+                            <div key={index} className="project-card">
+                                <div className="project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                                        <path d="M3 9h18" />
+                                    </svg>
+                                </div>
+                                <div className="project-details">
+                                    <h2>{project.title}</h2>
+                                    <p>{project.description}</p>
+                                    <div className="project-tags">
+                                        {project.tags.map((tag, tagIndex) => (
+                                            <span key={tagIndex} className="project-tag">{tag}</span>
+                                        ))}
+                                    </div>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="view-project">
+                                        View Project
+                                        <span className="arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
         </div>
+        </div>
+    </>
     );
 };
-
 export default Home;

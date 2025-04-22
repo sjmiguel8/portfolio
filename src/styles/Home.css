@@ -246,3 +246,20 @@
         text-align: center;
     }
 }
+
+.featured-projects-header {
+    background-color: #ffffff00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(242, 239, 239);
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.featured-projects-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    padding-bottom: 24px;
+}
