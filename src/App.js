@@ -6,9 +6,11 @@ import Contact from './pages/Contact';
 import Projects from './pages/ProjectCard/ProjectCard';
 import Skills from './pages/Skills';
 import './styles/App.css';
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
+    
     <Router>
       <div className="app-container">
         <Routes>

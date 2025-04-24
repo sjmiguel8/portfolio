@@ -4,17 +4,17 @@ import '../styles/Home.css';
 
 const featuredProjects = [
     {
-        iframe: <iframe src="https://devsspark.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,
+        iframe: <iframe src="chittchat.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,
         title: 'Featured Project 1',
-        description: 'Developed DevSpark, a comprehensive web application designed to facilitate the creation and management of developer portfolios. The platform allows users to create, edit, and delete their portfolios, showcasing their skills and projects. This project highlights expertise in full-stack development, including user authentication, data management, and responsive design.',
-        link: 'https://devsspark.vercel.app/',
+        description: 'ChitChat is a fully functional debate platform featuring secure user login/registration, forum creation and participation, and user profile status updates. Implemented a robust backend system using Supabase for data storage, demonstrating full-stack development capabilities. This project emphasizes skills in database management, user authentication, and building interactive community platforms.',
+        link: 'chittchat.vercel.app/"',
         color: '#FF6B6B',
         tags: ["React", "Node.js", "JavaScript"]
     },
     {
         iframe: <iframe src="https://devsparkshub.vercel.app/" title="Featured Project 2" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,
         title: 'Featured Project 2',
-        description: 'Create single or multi-page websites with customizable sections, themes, and content. The platform allows users to generate websites tailored to their needs, showcasing skills in front-end development and user experience design. This project emphasizes the ability to create user-friendly tools for website generation.',
+        description: 'DevSpark is a comprehensive web application designed to facilitate the creation and management of developer portfolios. The platform allows users to create, edit, and delete their portfolios, showcasing their skills and projects. This project highlights expertise in full-stack development, including user authentication, data management, and responsive design.',
         link: 'https://devsparkshub.vercel.app/',
         color: '#FF6B6B',
         tags: ["React", "Node.js", "JavaScript"]
