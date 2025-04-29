@@ -4,12 +4,12 @@ import '../styles/Home.css';
 
 const featuredProjects = [
     {
-        iframe: <iframe src="chittchat.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,
+        iframe: <iframe src="https://chittchat.vercel.app/" title="Featured Project 1" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,        
         title: 'Featured Project 1',
         description: 'ChitChat is a fully functional debate platform featuring secure user login/registration, forum creation and participation, and user profile status updates. Implemented a robust backend system using Supabase for data storage, demonstrating full-stack development capabilities. This project emphasizes skills in database management, user authentication, and building interactive community platforms.',
-        link: 'chittchat.vercel.app/"',
+        link: 'https://chit-chat-alpha-six.vercel.app/',
         color: '#FF6B6B',
-        tags: ["React", "Node.js", "JavaScript"]
+        tags: ["Next.js", "React", "Javascript", "Node.js", "Python", "HTML", "CSS", "Supabase", "Terraform"]
     },
     {
         iframe: <iframe src="https://devsparkshub.vercel.app/" title="Featured Project 2" width="560" height="315" frameBorder="0" allowFullScreen></iframe>,
@@ -108,7 +108,7 @@ const Home = () => {
                         <div className="featured-projects-header">
                             <h2>Featured Projects</h2>
                             <div className="responsive-iframe-wrapper">
-                                <iframe src="https://devsspark.vercel.app/" title="Featured Project 1" frameBorder="0" allowFullScreen></iframe>
+                                <iframe src="https://chit-chat-alpha-six.vercel.app/" title="Featured Project 1" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="responsive-iframe-wrapper">
                                 <iframe src="https://devsparkshub.vercel.app/" title="Featured Project 2" frameBorder="0" allowFullScreen></iframe>
