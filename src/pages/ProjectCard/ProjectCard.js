@@ -110,37 +110,6 @@ const ProjectCard = ({ project }) => {
 };
 
 const Projects = () => {
-    const inProgressProjects = [
-        {
-            title: 'Coinscape',
-            description: 'This project is currently in progress and will be updated soon.',
-            link: 'https://coinsscape.vercel.app/',
-            color: '#FFB668',
-            tags: ["React", "Crypto API", "Real-time Data", "JavaScript", "HTML", "CSS"]
-        },
-        {
-            title: 'Colony',
-            description: 'This project is currently in progress and will be updated soon.',
-            link: 'https://v0-colony-game-concept.vercel.app/',
-            color: '#4ECDC4',
-            tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
-        },
-        {
-            title: 'Box-Brawler',
-            description: 'This project is currently in progress and will be updated soon.',
-            link: 'https://v0-three-js-fighting-game.vercel.app/',
-            color: '#4ECDC4',
-            tags: ["Next.js", "React", "Javascript", "Node.js", "Typescript", "HTML", "CSS"]
-        },
-        {
-            title: 'ChronoHarvester',
-            description: 'This project is currently in progress and will be updated soon.',
-            link: 'https://v0-three-js-game-concept-gray.vercel.app/',
-            color: '#45B7D1',
-            tags: ["Next.js", "React", "Javascript", "Node.js", "MongoDB", "NeonDB", "Typescript", "HTML", "CSS"]
-        }   
-    ];
-
     return (
         <div className="projects-container">
             <Header />
@@ -148,14 +117,6 @@ const Projects = () => {
                 <h1>All Projects</h1>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <ProjectCard key={index} project={project} />
-                    ))}
-                </div>
-
-                <div className="in-progress-header">Work In Progress</div>
-
-                <div className="projects-grid">
-                    {inProgressProjects.map((project, index) => (
                         <ProjectCard key={index} project={project} />
                     ))}
                 </div>
